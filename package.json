@@ -1,0 +1,22 @@
+{
+  "name": "fundamental",
+  "version": "1.0.0",
+  "description": "work-project",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "tailwindcss build -i src/main.css -o public/styles.css"
+  },
+  "author": "Venedykt Mitishov <chewbaccayeti@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChewBaccaYeti/fundamental"
+  },
+  "keywords": [
+    "fundamental"
+  ],
+  "devDependencies": {
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1"
+  }
+}
