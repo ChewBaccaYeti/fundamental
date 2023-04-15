@@ -68,6 +68,7 @@ module.exports = {
         'tailwindcss/table-layout': {},
         'tailwindcss/vertical-align': {},
         'tailwindcss/whitespace': {},
+        
         tailwindcss: {},
         autoprefixer: {},
     },
