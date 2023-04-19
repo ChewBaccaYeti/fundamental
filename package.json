@@ -4,7 +4,8 @@
   "description": "work-project",
   "main": "tailwind.config.js",
   "scripts": {
-    "build": "tailwindcss build -i src/main.css -o public/styles.css"
+    "start": "npx tailwindcss -i ./src/main.css -o ./dist/styles.css --watch",
+    "build": "tailwindcss build -i ./src/main.css -o ./public/styles.css"
   },
   "author": "Venedykt Mitishov <chewbaccayeti@gmail.com>",
   "license": "ISC",
