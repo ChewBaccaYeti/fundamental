@@ -89,6 +89,7 @@ main {
     background-color: #202020;
 }
 .header_button:hover {
+    cursor: pointer;
     background-color: #404040;
 }
 
@@ -149,6 +150,7 @@ main {
     color: #FFFFFF;
 }
 .hero_text_button:hover {
+    cursor: pointer;
     background-color: #27a568;
     -webkit-box-shadow: 0px 0px 5px 0px #000000; 
     box-shadow: 0px 0px 5px 0px #000000;

@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "work-project",
   "main": "tailwind.config.js",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "npx tailwindcss -i ./src/main.css -o ./dist/styles.css --watch",
-    "build": "tailwindcss build -i ./src/main.css -o ./public/styles.css"
+    "start:tailwind": "npx tailwindcss -i ./src/main.css -o ./dist/styles.css --watch",
+    "build": "tailwindcss build -i ./src/main.css -o ./public/styles.css",
+    "start": "parcel src/*.html",
+    "build:parcel": "parcel build src/*.html"
   },
   "author": "Venedykt Mitishov <chewbaccayeti@gmail.com>",
   "license": "ISC",
