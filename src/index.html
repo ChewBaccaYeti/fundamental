@@ -2,12 +2,30 @@
 <html lang="en" class="dark">
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/public/styles.css">
-    <link rel="stylesheet" href="/src/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Landing page for escape room" />
+    <title>Landing Page</title>
+
+    <link rel="stylesheet" href="/public/styles.css"/>
+    <link rel="stylesheet" href="/src/styles.css"/>
+    <!-- <link rel="stylesheet" href="./main.scss"/> -->
+
+    <link rel="preload" href="./fonts/Roboto-Bold.ttf" as="font" />
+    <link rel="preload" href="./fonts/NotoSans-Regular.ttf" as="font" />
+    <link rel="preload" href="./fonts/Hind-Light.ttf" as="font" />
+    <link rel="preload" href="./fonts/Hind-Regular.ttf" as="font" />
+    <link rel="preload" href="./fonts/Hind-SemiBold.ttf" as="font" />
+    <link rel="preload" href="./fonts/Poppins-Medium.ttf" as="font" />
+    <link rel="preload" href="./fonts/Poppins-Regular.ttf" as="font" />
+    <link rel="preload" href="./fonts/Poppins-SemiBold.ttf" as="font" />
+    <link rel="preload" href="./fonts/Montserrat-Bold.ttf" as="font" />
+    <link rel="preload" href="./fonts/Montserrat-ExtraBold.ttf" as="font" />
+    <link rel="preload" href="./fonts/Montserrat-SemiBold.ttf" as="font" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;600&family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <title>Landing Page</title>
+
 </head>
 <body class="body">
     <include src="./partials/header.html"></include>
@@ -29,147 +47,10 @@
 <main>
     <include src="./partials/hero.html"></include>
 </main>
-
     <include src="./partials/escape.html"></include>
-
     <include src="./partials/video.html"></include>
-
     <include src="./partials/program.html"></include>
-    <section class="program">
-        <div class="program_container">
-            <h3 class="program_article">Нашата програма</h3>
-            <p class="program_paragraph">
-                We serve many customers, ranging from small businesses, medium
-                entrepreneurs, to world-renowned companies.
-            </p>
-            <ul class="program_list">
-                <li class="program_list_item">
-                    <div class="hand">
-                        <div class="hand_container">
-                            <svg class="program_list_icon" width="45.9px" height="43.52px">
-                                <use href="./images/svg/sprite-devs.svg#icon-hand"></use>
-                            </svg>
-                        </div>
-                        <h4 class="program_list_article">
-                            Посрещане на гости, инструктаж преди играта
-                        </h4>
-                        <p class="program_list_paragraph">
-                            It is a long established fact that a reader will be distracted by
-                            the readable content of a page when looking at its layout.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <svg>
-                            <use href="./images/svg/sprite-devs.svg#icon-Ellipse-79"></use>
-                        </svg>
-                    </div>
-                </li>
-                <li class="program_list_item">
-                    <div class="hat">
-                        <div class="hat_container">
-                            <svg class="program_list_icon" width="34.18px" height="43px">
-                                <use href="./images/svg/sprite-devs.svg#icon-hat"></use>
-                            </svg>
-                        </div>
-    
-                        <h4 class="program_list_article">Игри и забавления в ESCAPE ROOMS</h4>
-                        <p class="program_list_paragraph">
-                            It is a long established fact that a reader will be distracted by
-                            the readable content of a page when looking.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <svg>
-                            <use href="./images/svg/sprite-devs.svg#icon-Ellipse-81"></use>
-                        </svg>
-                    </div>
-                </li>
-                <li class="program_list_item">
-                    <div class="forkspoon">
-                        <div class="forkspoon_container">
-                            <svg class="program_list_icon" width="50.59px" height="45px">
-                                <use href="./images/svg/sprite-devs.svg#icon-forkspoon"></use>
-                            </svg>
-                        </div>
-    
-                        <h4 class="program_list_article">
-                            Почерпка, игри и дискотека в залата за парти Here
-                        </h4>
-                        <p class="program_list_paragraph">
-                            It is a long established fact that a reader will be distracted by
-                            the readable content of a page when looking at its layout.
-                        </p>
-                    </div>
-                </li>
-                <li class="program_list_item">
-                    <div class="gamepad">
-                        <div class="gamepad_container">
-                            <svg class="program_list_icon" width="51.25px" height="36.9px">
-                                <use href="./images/svg/sprite-devs.svg#icon-gamepad"></use>
-                            </svg>
-                        </div>
-    
-                        <h4 class="program_list_article">
-                            Анимация с професионални аниматори
-                        </h4>
-                        <p class="program_list_paragraph">
-                            It is a long established fact that a reader will be distracted by
-                            the readable content of a page when looking at its layout.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <svg>
-                            <use href="./images/svg/sprite-devs.svg#icon-Ellipse-79"></use>
-                        </svg>
-                    </div>
-                </li>
-                <li class="program_list_item">
-                    <div class="cake">
-                        <div class="cake_container">
-                            <svg class="program_list_icon" width="50.59px" height="45px">
-                                <use href="./images/svg/sprite-devs.svg#icon-cake"></use>
-                            </svg>
-                        </div>
-    
-                        <h4 class="program_list_article">Торта и специални поздравления</h4>
-                        <p class="program_list_paragraph">
-                            It is a long established fact that a reader will be distracted by
-                            the readable content of a page when looking.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <svg>
-                            <use href="./images/svg/sprite-devs.svg#icon-Ellipse-81"></use>
-                        </svg>
-                    </div>
-                </li>
-                <li class="program_list_item">
-                    <div class="note">
-                        <div class="note_container">
-                            <svg class="program_list_icon" width="43px" height="43px">
-                                <use href="./images/svg/sprite-devs.svg#icon-note"></use>
-                            </svg>
-                        </div>
-    
-                        <h4 class="program_list_article">Снимки с персонална уеб страница</h4>
-                        <p class="program_list_paragraph">
-                            It is a long established fact that a reader will be distracted by
-                            the readable content of a page when looking at its layout.
-                        </p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
     <footer></footer>
-</body> 
+</body>
 </html>
 
