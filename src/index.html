@@ -8,7 +8,6 @@
 
     <link rel="stylesheet" href="/public/styles.css"/>
     <link rel="stylesheet" href="/src/styles.css"/>
-    <!-- <link rel="stylesheet" href="./main.scss"/> -->
 
     <link rel="preload" href="./fonts/Roboto-Bold.ttf" as="font" />
     <link rel="preload" href="./fonts/NotoSans-Regular.ttf" as="font" />
@@ -46,10 +45,621 @@
     </header>
 <main>
     <include src="./partials/hero.html"></include>
+
+    <section class="hero_section">
+      <div class="hero_container">
+        <div class="hero_text">
+          <h1 class="hero_text_article">Подари един Незабравим рожден ден</h1>
+          <p class="hero_text_paragraph">
+            Искате да отпразнувате незабравим рожден ден на детето Ви? Искате да му
+            подарите незабравими емоции? Изберете един различен начин детето Ви да
+            се забавлява с приятелите си.
+          </p>
+          <button type="button" class="hero_text_button">Резервирай сега!</button>
+        </div>
+        <div class="numbers">
+          <ul class="numbers_list_number">
+            <li class="numbers_list_number_item text-orange-500">212+</li>
+            <li class="numbers_list_number_item text-violet-500">100+</li>
+            <li class="numbers_list_number_item text-green-500">12+</li>
+          </ul>
+          <ul class="numbers_list_text">
+            <li class="numbers_list_text_item">рождени дни</li>
+            <li class="numbers_list_text_item">доволни рожденници</li>
+            <li class="numbers_list_text_item">локации</li>
+          </ul>
+        </div>
+        <div class="hero_images">
+          <div>
+            <svg width="607.19" height="505.6">
+              <use href=""></use>
+            </svg>
+          </div>
+          <div>
+            <svg width="708.21" height="684.99">
+              <use href=""></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
 </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <include src="./partials/escape.html"></include>
+    <section class="escape_section">
+      <!-- <svg width="2171.43px" height="356.29px"><use href="./images/svg/sprite-devs.svg#icon-escape"></use></svg> -->
+      <div class="escape_container">
+        <img
+          class="escape_img"
+          src="./images/ananieva_a_scene_where_van_gogh_is_smiling_and_happy_in_a_pixar_2068550e-8383-4f95-afc4-fcf60ad52b97 1.png"
+        />
+        <div class="escape_info">
+          <div class="escape_texts">
+            <h1 class="escape_article">Ескейп стая</h1>
+            <p class="escape_paragraph">
+              Изберете един различен начин детето Ви да се забавлява с приятелите
+              си. Нашият луд Гений Ви кани в ескейп стая “Лудостта на Гения“. Той ще
+              отведе децата Ви в 19. век, когато е живял и ще ги потопи в света на
+              изкуството.
+            </p>
+            <button type="button" class="escape_button">
+              <a href="#">Резервирай сега!</a>
+            </button>
+          </div>
+          <ul class="escape_list">
+            <li class="escape_list_item">
+              <div class="escape_list_container">
+                <svg width="32px" height="43px">
+                  <use href="./images/svg/sprite-devs.svg#icon-escape_hat"></use>
+                </svg>
+                <h3>Парти Зала</h3>
+                <p>От 1 да 6 часа</p>
+              </div>
+            </li>
+            <li class="escape_list_item">
+              <div class="escape_list_container">
+                <svg width="44px" height="39px">
+                  <use href="./images/svg/sprite-devs.svg#icon-escape_people"></use>
+                </svg>
+                <h3>2 - 30</h3>
+                <p>Деца / Гости</p>
+              </div>
+            </li>
+            <li class="escape_list_item">
+              <div class="escape_list_container">
+                <svg width="35px" height="43px">
+                  <use href="./images/svg/sprite-devs.svg#icon-escape_time"></use>
+                </svg>
+                <h3>60</h3>
+                <p>Минути / Игра</p>
+              </div>
+            </li>
+            <li class="escape_list_item">
+              <div class="escape_list_container">
+                <svg width="47px" height="42px">
+                  <use href="./images/svg/sprite-devs.svg#icon-escape_fork"></use>
+                </svg>
+                <h3>60</h3>
+                <p>Минути / Игра</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <include src="./partials/video.html"></include>
+
+    <section class="video_section">
+      <div class="video_container">
+        <div class="video_text">
+          <h6>Нашата атмосфера</h6>
+          <h1>Вижте как се случва магията при нас</h1>
+        </div>
+        <div class="player">
+          <video class="video" controls>
+            <source src="video/sintel-short.mp4" type="video/mp4" />
+            <source src="video/sintel-short.webm" type="video/webm" />
+          </video>
+          <!-- <div class="controls">
+                    <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+                    <button class="stop" data-icon="S" aria-label="stop"></button>
+                    <div class="timer">
+                    <div></div>
+                    <span aria-label="timer">00:00</span>
+                    </div>
+                    <button class="rwd" data-icon="B" aria-label="rewind"></button>
+                    <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+                </div> -->
+        </div>
+        <!-- <ul class="video_list">
+          <li class="video_list_item">
+            <div>
+              <svg width="1590px" height="1462px">
+                <use href="./images/svg/sprite-devs.svg#icon-video_yellow"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="video_list_item">
+            <div>
+              <svg width="896.51px" height="1069.38px">
+                <use href="./images/svg/sprite-devs.svg#icon-video_purple"></use>
+              </svg>
+            </div>
+          </li>
+        </ul> -->
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <include src="./partials/program.html"></include>
+
+    <section class="program_section">
+      <div class="program_text">
+        <h3 class="program_article">Нашата програма</h3>
+        <p class="program_paragraph">
+          We serve many customers, ranging from small businesses, medium
+          entrepreneurs, to world-renowned companies.
+        </p>
+      </div>
+
+      <div class="program_container_above">
+        <ul class="program_list_above">
+          <li class="program_list_item">
+            <div class="hand">
+              <div class="hand_container">
+                <svg class="program_list_icon" width="45.9px" height="43.52px">
+                  <use href="./images/svg/sprite-devs.svg#icon-hand"></use>
+                </svg>
+              </div>
+              <h4 class="program_list_article">
+                Посрещане на гости, инструктаж преди играта
+              </h4>
+              <p class="program_list_paragraph">
+                It is a long established fact that a reader will be distracted by
+                the readable content of a page when looking at its layout.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <svg class="arrow_above" width="266.95px" height="27.67px">
+                <use href="./images/svg/sprite-devs.svg#icon-Ellipse-79"></use>
+              </svg>
+            </div>
+          </li>
+
+          <li class="program_list_item">
+            <div class="hat">
+              <div class="hat_container">
+                <svg class="program_list_icon" width="34.18px" height="43px">
+                  <use href="./images/svg/sprite-devs.svg#icon-hat"></use>
+                </svg>
+              </div>
+              <h4 class="program_list_article">Игри и забавления в ESCAPE ROOMS</h4>
+              <p class="program_list_paragraph">
+                It is a long established fact that a reader will be distracted by
+                the readable content of a page when looking.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <svg class="arrow_above" width="266.95px" height="27.67px">
+                <use href="./images/svg/sprite-devs.svg#icon-Ellipse-81"></use>
+              </svg>
+            </div>
+          </li>
+
+          <li class="program_list_item">
+            <div class="forkspoon">
+              <div class="forkspoon_container">
+                <svg class="program_list_icon" width="50.59px" height="45px">
+                  <use href="./images/svg/sprite-devs.svg#icon-forkspoon"></use>
+                </svg>
+              </div>
+              <h4 class="program_list_article">
+                Почерпка, игри и дискотека в залата за парти Here
+              </h4>
+              <p class="program_list_paragraph">
+                It is a long established fact that a reader will be distracted by
+                the readable content of a page when looking at its layout.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="program_container_below">
+        <ul class="program_list_below">
+          <li class="program_list_item">
+            <div class="gamepad">
+              <div class="gamepad_container">
+                <svg class="program_list_icon" width="51.25px" height="36.9px">
+                  <use href="./images/svg/sprite-devs.svg#icon-gamepad"></use>
+                </svg>
+              </div>
+              <h4 class="program_list_article">
+                Анимация с професионални аниматори
+              </h4>
+              <p class="program_list_paragraph">
+                It is a long established fact that a reader will be distracted by
+                the readable content of a page when looking at its layout.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <svg class="arrow_below">
+                <use href="./images/svg/sprite-devs.svg#icon-Ellipse-79"></use>
+              </svg>
+            </div>
+          </li>
+
+          <li class="program_list_item">
+            <div class="cake">
+              <div class="cake_container">
+                <svg class="program_list_icon" width="50.59px" height="45px">
+                  <use href="./images/svg/sprite-devs.svg#icon-cake"></use>
+                </svg>
+              </div>
+              <h4 class="program_list_article">Торта и специални поздравления</h4>
+              <p class="program_list_paragraph">
+                It is a long established fact that a reader will be distracted by
+                the readable content of a page when looking.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <svg class="arrow_below">
+                <use href="./images/svg/sprite-devs.svg#icon-Ellipse-81"></use>
+              </svg>
+            </div>
+          </li>
+
+          <li class="program_list_item">
+            <div class="note">
+              <div class="note_container">
+                <svg class="program_list_icon" width="43px" height="43px">
+                  <use href="./images/svg/sprite-devs.svg#icon-note"></use>
+                </svg>
+              </div>
+              <h4 class="program_list_article">Снимки с персонална уеб страница</h4>
+              <p class="program_list_paragraph">
+                It is a long established fact that a reader will be distracted by
+                the readable content of a page when looking at its layout.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <include src="./partials/questions.html"></include>
+
+    <section class="questions_section">
+      <div class="questions_container">
+        <div class="questions_text">
+          <h6 class="questions_article">На място</h6>
+          <p class="questions_paragraph">Усетете атмосфера</p>
+        </div>
+        <div class="questions_photos">
+          <!-- <picture class="photos"> -->
+            <img width="353px" src="./images/group1.png" alt="Partyhard"/>
+            <img width="353px" src="./images/cake-pic.png" alt="B-day cake"/>
+            <img width="353px" src="./images/two-kids.png" alt="Boy and girl posing"/>
+            <img width="363px" src="./images/group2.png" alt="Kids football club b-day"/>
+            <img width="353px" src="./images/group3.png" alt="Kitchen"/>
+            <img width="353px" src="./images/group4.png" alt="Boys smiling"/>
+          <!-- </picture> -->
+        </div>
+      </div>
+      <div class="questions_text">
+        <h6 class="questions_article">Често задавани въпроси</h6>
+        <h3 class="questions_paragraph">Остана нещо неясно?</h3>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <include src="./partials/reservation.html"></include>
+
+    <section class="reservation_section">
+      <div class="reservation_text">
+        <h2 class="reservation_article">Направи резервация</h2>
+        <div class="reservation_dates">
+          <button type="button" class="dates_left">
+            <svg width="32px" height="32px">
+              <use href="./images/svg/sprite-devs.svg#icon-ArrowCircleLeft"></use>
+            </svg>
+          </button>
+          <time class="reservation_paragraph">03.04.2023 — 09.04.2023</time>
+          <button type="button" class="dates_right">
+            <svg width="32px" height="32px">
+              <use href="./images/svg/sprite-devs.svg#icon-ArrowCircleRight"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="reservation_container">
+        <tbody class="reservation_body">
+          <table class="reservation_table">
+            <tr class="table_date">
+              <th class="table_days">
+                <svg width="24px" height="22px">
+                  <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+                </svg>
+                03.04.2023
+                <br />
+                Понеделник
+              </th>
+              <th class="table_days">
+                <svg width="24px" height="22px">
+                  <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+                </svg>
+                04.04.2023
+                <br />
+                Вторник
+              </th>
+              <th class="table_days">
+                <svg width="24px" height="22px">
+                  <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+                </svg>
+                05.04.2023
+                <br />
+                Сряда
+              </th>
+              <th class="table_days">
+                <svg width="24px" height="22px">
+                  <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+                </svg>
+                06.04.2023
+                <br />
+                Четвъртък
+              </th>
+              <th class="table_days">
+                <svg width="24px" height="22px">
+                  <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+                </svg>
+                07.04.2023
+                <br />
+                Петък
+              </th>
+              <th class="table_days">
+                <svg width="24px" height="22px">
+                  <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+                </svg>
+                08.04.2023
+                <br />
+                Събота
+              </th>
+              <th class="table_days">
+                <svg width="24px" height="22px">
+                  <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+                </svg>
+                09.04.2023
+                <br />
+                Неделя
+              </th>
+            </tr>
+            <tr class="table_time">
+              <td class="time">10:00</td>
+              <td class="time">10:00</td>
+              <td class="time">10:00</td>
+              <td class="time">10:00</td>
+              <td class="time">10:00</td>
+              <td class="time">10:00</td>
+              <td class="time">10:00</td>
+            </tr>
+            <tr class="table_time">
+              <td class="time">12:00</td>
+              <td class="time">12:00</td>
+              <td class="time">12:00</td>
+              <td class="time">12:00</td>
+              <td class="time">12:00</td>
+              <td class="time">12:00</td>
+              <td class="time">12:00</td>
+            </tr>
+            <tr class="table_time">
+              <td class="time">14:00</td>
+              <td class="time">14:00</td>
+              <td class="time">14:00</td>
+              <td class="time">14:00</td>
+              <td class="time">14:00</td>
+              <td class="time">14:00</td>
+              <td class="time">14:00</td>
+            </tr>
+            <tr class="table_time">
+              <td class="time">16:00</td>
+              <td class="time">16:00</td>
+              <td class="time">16:00</td>
+              <td class="time">16:00</td>
+              <td class="time">16:00</td>
+              <td class="time">16:00</td>
+              <td class="time">16:00</td>
+            </tr>
+            <tr class="table_time">
+              <td class="time">18:00</td>
+              <td class="time">18:00</td>
+              <td class="time">18:00</td>
+              <td class="time">18:00</td>
+              <td class="time">18:00</td>
+              <td class="time">18:00</td>
+              <td class="time">18:00</td>
+            </tr>
+            <tr class="table_time">
+              <td class="time">20:00</td>
+              <td class="time">20:00</td>
+              <td class="time">20:00</td>
+              <td class="time">20:00</td>
+              <td class="time">20:00</td>
+              <td class="time">20:00</td>
+              <td class="time">20:00</td>
+            </tr>
+            <tr class="table_time">
+              <td class="time">22:00</td>
+              <td class="time">22:00</td>
+              <td class="time">22:00</td>
+              <td class="time">22:00</td>
+              <td class="time">22:00</td>
+              <td class="time">22:00</td>
+              <td class="time">22:00</td>
+            </tr>
+          </table>
+        </tbody>
+      </div>
+
+      <div>
+        <form></form>
+      </div>
+    </section>
     <footer></footer>
 </body>
 </html>

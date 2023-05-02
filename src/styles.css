@@ -27,6 +27,40 @@
         url('./fonts/Montserrat-SemiBold.ttf');
 }
 
+/* General settings */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --accent-color: #2196F3;
+  --accent-color-active: #188ce8;
+  --black-color: #000000;
+  --primary-color: #212121;
+  --secondary-color: #757575;
+  --dark-color: #2F303A;
+  --primary-white: #FFFFFF;
+  --secondary-white: #F5F4FA;
+  --modal-close-color: #0000001a;
+  --modal-overlay-color: #00000033;
+  --modal-border-color: #21212133;
+  --secondary-text-color: #757575;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --secondary-text-color-op: #75757580;
+
+  --duration: 250ms;
+  --longer: 550ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 a {
     color: #FFFFFF;
     text-decoration: none;
@@ -39,6 +73,10 @@ body {
 
 main {
     width: 100%;
+}
+
+footer {
+  background-color: #EEF4FF;
 }
 
 /* Header section  -------------------------------------------------------------------*/
@@ -166,6 +204,12 @@ main {
     -webkit-box-shadow: 0px 0px 5px 0px #000000;
     box-shadow: 0px 0px 5px 0px #000000;
 }
+.hero_text_button:focus {
+  cursor: pointer;
+  background-color: #1d7c4e;
+  -webkit-box-shadow: 0px 0px 5px 0px #000000;
+  box-shadow: 0px 0px 5px 0px #000000;
+}
 
 .numbers {
     display: block;
@@ -281,6 +325,12 @@ main {
     background-color: #27a568;
     -webkit-box-shadow: 0px 0px 5px 0px #000000;
     box-shadow: 0px 0px 5px 0px #000000;
+}
+.escape_button:focus {
+  cursor: pointer;
+  background-color: #1d7c4e;
+  -webkit-box-shadow: 0px 0px 5px 0px #000000;
+  box-shadow: 0px 0px 5px 0px #000000;
 }
 
 .escape_list {
@@ -624,4 +674,198 @@ main {
     background-image: url(./images/svg/svg_folder/note_rectangle.svg);
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+/* Questions section -------------------------------------------------------------------*/
+
+.questions_section {
+  width: 100%;
+}
+
+.questions_container {
+  margin: 120px 400px;
+}
+
+.questions_text {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questions_article {
+  width: 1120px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+
+  text-align: center;
+
+  color: #4C40F7;
+}
+
+.questions_paragraph {
+  width: 518px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 56px;
+
+  text-align: center;
+  letter-spacing: -0.1px;
+
+  color: #111029;
+}
+
+.questions_photos {
+  width: 1122px;
+  height: 980px;
+  padding: 0px 50px;
+  display: grid;
+  grid-template-areas: "a a a" "b b b" "c c c";
+  justify-items: stretch;
+  justify-content: center;
+
+  gap: 30px;
+}
+
+/* .photos {} */
+
+.questions_photos > img {
+  border-radius: 5px;
+}
+
+/* Reservation section -------------------------------------------------------------------*/
+
+.reservation_section {
+  width: 100%;
+
+  background-color: #EEF4FF;
+}
+
+.reservation_text {
+  padding-top: 99px;
+  margin: 0px 400px 113px;
+  gap: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservation_article {
+  width: 1120px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 72px;
+
+  text-align: center;
+  letter-spacing: -0.4px;
+
+  color: #111029;
+}
+
+.reservation_dates {
+  width: 668px;
+  height: 42px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.dates_left {}
+
+.reservation_paragraph {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+
+  color: #6B6B6B;
+}
+
+.dates_right {}
+
+.reservation_container {
+  margin: 113px 138px 121px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.reservation_body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservation_table {
+  width: 1646px;
+  height: 674px;
+  padding: 0px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid gainsboro;
+  background-color: #FCFCFC;
+}
+
+.table_date {
+  width: 1646px;
+
+  display: flex;
+  align-items: center;
+}
+
+.table_days {
+  width: 240px;
+  height: 100px;
+  padding-left: 22px;
+  gap: 10px;
+
+  display: flex;
+  align-items: center;
+  border-bottom: 1.5px solid #4C40F7;
+}
+
+.table_time {
+  width: 1646px;
+
+  display: flex;
+  align-items: center;
+}
+
+.time {
+  width: 240px;
+  height: 82px;
+  padding-left: 12px;
+
+  display: flex;
+  align-items: center;
+
+  border-top: 1.5px solid #4C40F7;
+  border-left: 1px solid gainsboro;
+  border-right: 1px solid gainsboro;
+}
+.time:hover {
+  background-color: gainsboro;
 }
