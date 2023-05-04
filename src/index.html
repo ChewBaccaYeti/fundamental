@@ -9,22 +9,6 @@
     <link rel="stylesheet" href="/public/styles.css"/>
     <link rel="stylesheet" href="/src/styles.css"/>
 
-    <link rel="preload" href="./fonts/Roboto-Bold.ttf" as="font" />
-    <link rel="preload" href="./fonts/NotoSans-Regular.ttf" as="font" />
-    <link rel="preload" href="./fonts/Hind-Light.ttf" as="font" />
-    <link rel="preload" href="./fonts/Hind-Regular.ttf" as="font" />
-    <link rel="preload" href="./fonts/Hind-SemiBold.ttf" as="font" />
-    <link rel="preload" href="./fonts/Poppins-Medium.ttf" as="font" />
-    <link rel="preload" href="./fonts/Poppins-Regular.ttf" as="font" />
-    <link rel="preload" href="./fonts/Poppins-SemiBold.ttf" as="font" />
-    <link rel="preload" href="./fonts/Montserrat-Bold.ttf" as="font" />
-    <link rel="preload" href="./fonts/Montserrat-ExtraBold.ttf" as="font" />
-    <link rel="preload" href="./fonts/Montserrat-SemiBold.ttf" as="font" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;600&family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
-
 </head>
 <body class="body">
     <include src="./partials/header.html"></include>
@@ -40,7 +24,8 @@
                 <li><a href="#">Резервирай</a></li>
                 <li><a href="#">Контакти</a></li>
             </ul>
-            <button type="button" class="header_button"><a href="#">Резервирай сега!</a></button>
+            <a href="#"><button type="button" class="header_button">резервирай сега!
+            </button></a>
         </nav>
     </header>
 <main>
@@ -48,37 +33,33 @@
 
     <section class="hero_section">
       <div class="hero_container">
-        <div class="hero_text">
-          <h1 class="hero_text_article">Подари един Незабравим рожден ден</h1>
-          <p class="hero_text_paragraph">
-            Искате да отпразнувате незабравим рожден ден на детето Ви? Искате да му
-            подарите незабравими емоции? Изберете един различен начин детето Ви да
-            се забавлява с приятелите си.
-          </p>
-          <button type="button" class="hero_text_button">Резервирай сега!</button>
-        </div>
-        <div class="numbers">
-          <ul class="numbers_list_number">
-            <li class="numbers_list_number_item text-orange-500">212+</li>
-            <li class="numbers_list_number_item text-violet-500">100+</li>
-            <li class="numbers_list_number_item text-green-500">12+</li>
-          </ul>
-          <ul class="numbers_list_text">
-            <li class="numbers_list_text_item">рождени дни</li>
-            <li class="numbers_list_text_item">доволни рожденници</li>
-            <li class="numbers_list_text_item">локации</li>
-          </ul>
-        </div>
         <div class="hero_images">
-          <div>
-            <svg width="607.19" height="505.6">
-              <use href=""></use>
-            </svg>
+          <svg class="yellowPuddle"><use href="./images/svg/sprite-devs.svg#icon-yellowPuddle_svg"></use></svg>
+          <svg class="purplePuddle"><use href="./images/svg/sprite-devs.svg#icon-purplePuddle_svg"></use></svg>
+          <img class="heroes_photo" src="./images/heroes_photo.png">
+          <!-- <svg class="arrow_group"><use href="./images/svg/sprite-devs.svg#icon-arrowGroup_svg"></use></svg> -->
+        </div>
+        <div class="hero_info">
+          <div class="hero_text">
+            <h1 class="hero_text_article">Подари един Незабравим рожден ден</h1>
+            <p class="hero_text_paragraph">
+              Искате да отпразнувате незабравим рожден ден на детето Ви? Искате да му
+              подарите незабравими емоции? Изберете един различен начин детето Ви да
+              се забавлява с приятелите си.
+            </p>
+            <a href="#"><button type="button" class="hero_text_button">Резервирай сега!</button></a>
           </div>
-          <div>
-            <svg width="708.21" height="684.99">
-              <use href=""></use>
-            </svg>
+          <div class="numbers">
+            <ul class="numbers_list_number">
+              <li class="numbers_list_number_item text-orange-500">212+</li>
+              <li class="numbers_list_number_item text-violet-500">100+</li>
+              <li class="numbers_list_number_item text-green-500">12+</li>
+            </ul>
+            <ul class="numbers_list_text">
+              <li class="numbers_list_text_item">рождени дни</li>
+              <li class="numbers_list_text_item">доволни рожденници</li>
+              <li class="numbers_list_text_item">локации</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -128,6 +109,7 @@
 
 
     <include src="./partials/escape.html"></include>
+
     <section class="escape_section">
       <!-- <svg width="2171.43px" height="356.29px"><use href="./images/svg/sprite-devs.svg#icon-escape"></use></svg> -->
       <div class="escape_container">
@@ -144,9 +126,8 @@
               отведе децата Ви в 19. век, когато е живял и ще ги потопи в света на
               изкуството.
             </p>
-            <button type="button" class="escape_button">
-              <a href="#">Резервирай сега!</a>
-            </button>
+              <a href="#"><button type="button" class="escape_button">Резервирай сега!
+              </button></a>
           </div>
           <ul class="escape_list">
             <li class="escape_list_item">
