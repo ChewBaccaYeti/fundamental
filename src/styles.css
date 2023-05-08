@@ -522,6 +522,7 @@ footer {
 .program_section {
   position: relative;
   z-index: 4;
+  width: 100%;
   height: 1080px;
 }
 
@@ -532,13 +533,12 @@ footer {
   flex-direction: column;
   align-items: center;
 
+  padding-top: 120px;
   width: 100%;
   background-color: #EEF4FF;
 }
 
 .program_article {
-  padding: 120px 0px 0px 0px;
-
   display: flex;
   justify-content: center;
 
@@ -558,8 +558,6 @@ footer {
 }
 
 .program_paragraph {
-  padding: 80px 0px 0px 0px;
-
   display: flex;
   justify-content: center;
 
@@ -580,6 +578,8 @@ footer {
 .program_container_above {
   position: relative;
   z-index: 3;
+  margin: 0px;
+  padding: 20px 218px 116px 218px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -593,26 +593,26 @@ footer {
   align-items: center;
 
     gap: 54px;
-    margin: 0px;
-    padding: 116px 218px;
     list-style: none;
 }
 
 .arrow_above-1 {
   position: absolute;
-  top: 120px;
+  top: 30px;
   left: 560px;
 }
 
 .arrow_above-2 {
   position: absolute;
-  top: 180px;
+  top: 80px;
   left: 1070px;
 }
 
 .program_container_below {
   position: relative;
   z-index: 3;
+  margin: 0px;
+  padding: 116px 218px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -626,8 +626,6 @@ footer {
   align-items: center;
 
     /* gap: 54px; */
-    margin: 0px;
-    padding: 116px 218px;
     list-style: none;
 }
 
@@ -786,14 +784,21 @@ footer {
 
 /* Questions section -------------------------------------------------------------------*/
 
-.questions_section {}
+.questions_section {
+  position: relative;
+  z-index: 4;
+    width: 100%;
+}
 
 .questions_container {
-  margin: 120px 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    margin-top: 180px;
 }
 
 .questions_text {
-  padding: 50px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -815,6 +820,7 @@ footer {
 
 .questions_paragraph {
   width: 518px;
+  padding-bottom: 60px;
 
   font-family: 'Montserrat';
   font-style: normal;
@@ -831,7 +837,7 @@ footer {
 .questions_photos {
   width: 1122px;
   height: 980px;
-  padding: 0px 50px;
+  margin: 50px 50px;
   display: grid;
   grid-template-areas: "a a a" "b b b" "c c c";
   justify-items: stretch;
@@ -846,9 +852,68 @@ footer {
   border-radius: 5px;
 }
 
+.toggle_form-container {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+    gap: 32px;
+    padding: 0px 160px 0px 160px;
+    margin: 180px 0px;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+    gap: 32px;
+}
+
+.toggle-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+    width: 1120px;
+    height: 88px;
+    padding: 32px;
+}
+.toggle-item:hover {
+  cursor: pointer;
+  background-color: gainsboro;
+  -webkit-box-shadow: 0px 0px 5px 0px #000000;
+  box-shadow: 0px 0px 5px 0px #000000;
+}
+
+.toggle-item:focus > svg {
+  transform: rotate(180deg);
+}
+
+.questions_purple {
+  position: absolute;
+
+    left: -97px;
+    top: 1535px;
+}
+
+.questions_green {
+  position: absolute;
+
+    left: 1218px;
+    top: 1300px;
+}
+
 /* Reservation section -------------------------------------------------------------------*/
 
 .reservation_section {
+  z-index: 5;
+  position: relative;
+  width: 100%;
   background-color: #EEF4FF;
 }
 
@@ -972,4 +1037,6 @@ footer {
 }
 .time:hover {
   background-color: gainsboro;
+  -webkit-box-shadow: 0px 0px 5px 0px #000000;
+  box-shadow: 0px 0px 5px 0px #000000;
 }

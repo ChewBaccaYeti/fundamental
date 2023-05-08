@@ -12,11 +12,15 @@ module.exports = {
             'xl': '1280px'
         }
     },
+    corePlugins: {
+      aspectRatio: false,
+    },
     plugins: [{
         'postcss-import': {},
         'tailwindcss/nesting': 'postcss-nesting',
-        
+        '@tailwindcss/forms': {},
+
         tailwindcss: {},
         autoprefixer: {},
-    }],
+        }],
 }
