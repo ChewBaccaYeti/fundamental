@@ -1,150 +1,225 @@
 <section class="reservation_section">
-	<div class="reservation_text">
-		<h2 class="reservation_article">Направи резервация</h2>
-		<div class="reservation_dates">
-			<button class="dates_left" type="button">
-				<svg width="32px" height="32px">
-					<use href="./images/svg/sprite-devs.svg#icon-ArrowCircleLeft"></use>
-				</svg>
-			</button>
-			<time class="reservation_paragraph">03.04.2023 — 09.04.2023</time>
-			<button class="dates_right" type="button">
-				<svg width="32px" height="32px">
-					<use href="./images/svg/sprite-devs.svg#icon-ArrowCircleRight"></use>
-				</svg>
-			</button>
-		</div>
-	</div>
+  <div class="reservation_text">
+    <h2 class="reservation_article">Направи резервация</h2>
+    <div class="reservation_dates">
+      <button type="button" class="dates_left">
+        <svg width="32px" height="32px">
+          <use href="./images/svg/sprite-devs.svg#icon-ArrowCircleLeft"></use>
+        </svg>
+      </button>
+      <time class="reservation_paragraph">03.04.2023 — 09.04.2023</time>
+      <button type="button" class="dates_right">
+        <svg width="32px" height="32px">
+          <use href="./images/svg/sprite-devs.svg#icon-ArrowCircleRight"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 
-	<div class="reservation_container">
-		<tbody>
-			<table class="reservation_table">
-				<tr class="table_date">
-					<th class="table_days">
-						<svg width="24px" height="22px">
-							<use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
-						</svg>
-						03.04.2023
-						<br />
-						Понеделник
-					</th>
-					<th class="table_days">
-						<svg width="24px" height="22px">
-							<use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
-						</svg>
-						04.04.2023
-						<br />
-						Вторник
-					</th>
-					<th class="table_days">
-						<svg width="24px" height="22px">
-							<use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
-						</svg>
-						05.04.2023
-						<br />
-						Сряда
-					</th>
-					<th class="table_days">
-						<svg width="24px" height="22px">
-							<use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
-						</svg>
-						06.04.2023
-						<br />
-						Четвъртък
-					</th>
-					<th class="table_days">
-						<svg width="24px" height="22px">
-							<use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
-						</svg>
-						07.04.2023
-						<br />
-						Петък
-					</th>
-					<th class="table_days">
-						<svg width="24px" height="22px">
-							<use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
-						</svg>
-						08.04.2023
-						<br />
-						Събота
-					</th>
-					<th class="table_days">
-						<svg width="24px" height="22px">
-							<use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
-						</svg>
-						09.04.2023
-						<br />
-						Неделя
-					</th>
-				</tr>
-				<tr class="table_time">
-					<td class="time">10:00</td>
-					<td class="time">10:00</td>
-					<td class="time">10:00</td>
-					<td class="time">10:00</td>
-					<td class="time">10:00</td>
-					<td class="time">10:00</td>
-					<td class="time">10:00</td>
-				</tr>
-				<tr class="table_time">
-					<td class="time">12:00</td>
-					<td class="time">12:00</td>
-					<td class="time">12:00</td>
-					<td class="time">12:00</td>
-					<td class="time">12:00</td>
-					<td class="time">12:00</td>
-					<td class="time">12:00</td>
-				</tr>
-				<tr class="table_time">
-					<td class="time">14:00</td>
-					<td class="time">14:00</td>
-					<td class="time">14:00</td>
-					<td class="time">14:00</td>
-					<td class="time">14:00</td>
-					<td class="time">14:00</td>
-					<td class="time">14:00</td>
-				</tr>
-				<tr class="table_time">
-					<td class="time">16:00</td>
-					<td class="time">16:00</td>
-					<td class="time">16:00</td>
-					<td class="time">16:00</td>
-					<td class="time">16:00</td>
-					<td class="time">16:00</td>
-					<td class="time">16:00</td>
-				</tr>
-				<tr class="table_time">
-					<td class="time">18:00</td>
-					<td class="time">18:00</td>
-					<td class="time">18:00</td>
-					<td class="time">18:00</td>
-					<td class="time">18:00</td>
-					<td class="time">18:00</td>
-					<td class="time">18:00</td>
-				</tr>
-				<tr class="table_time">
-					<td class="time">20:00</td>
-					<td class="time">20:00</td>
-					<td class="time">20:00</td>
-					<td class="time">20:00</td>
-					<td class="time">20:00</td>
-					<td class="time">20:00</td>
-					<td class="time">20:00</td>
-				</tr>
-				<tr class="table_time">
-					<td class="time">22:00</td>
-					<td class="time">22:00</td>
-					<td class="time">22:00</td>
-					<td class="time">22:00</td>
-					<td class="time">22:00</td>
-					<td class="time">22:00</td>
-					<td class="time">22:00</td>
-				</tr>
-			</table>
-		</tbody>
-	</div>
+  <div class="reservation_container">
+    <tbody class="reservation_body">
+      <table class="reservation_table">
+        <tr class="table_date">
+          <th class="table_days">
+            <svg width="24px" height="22px">
+              <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+            </svg>
+            03.04.2023
+            <br />
+            Понеделник
+          </th>
+          <th class="table_days">
+            <svg width="24px" height="22px">
+              <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+            </svg>
+            04.04.2023
+            <br />
+            Вторник
+          </th>
+          <th class="table_days">
+            <svg width="24px" height="22px">
+              <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+            </svg>
+            05.04.2023
+            <br />
+            Сряда
+          </th>
+          <th class="table_days">
+            <svg width="24px" height="22px">
+              <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+            </svg>
+            06.04.2023
+            <br />
+            Четвъртък
+          </th>
+          <th class="table_days">
+            <svg width="24px" height="22px">
+              <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+            </svg>
+            07.04.2023
+            <br />
+            Петък
+          </th>
+          <th class="table_days">
+            <svg width="24px" height="22px">
+              <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+            </svg>
+            08.04.2023
+            <br />
+            Събота
+          </th>
+          <th class="table_days">
+            <svg width="24px" height="22px">
+              <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+            </svg>
+            09.04.2023
+            <br />
+            Неделя
+          </th>
+        </tr>
+        <tr class="table_time">
+          <td class="time">10:00</td>
+          <td class="time">10:00</td>
+          <td class="time">10:00</td>
+          <td class="time">10:00</td>
+          <td class="time">10:00</td>
+          <td class="time">10:00</td>
+          <td class="time">10:00</td>
+        </tr>
+        <tr class="table_time">
+          <td class="time">12:00</td>
+          <td class="time">12:00</td>
+          <td class="time">12:00</td>
+          <td class="time">12:00</td>
+          <td class="time">12:00</td>
+          <td class="time">12:00</td>
+          <td class="time">12:00</td>
+        </tr>
+        <tr class="table_time">
+          <td class="time">14:00</td>
+          <td class="time">14:00</td>
+          <td class="time">14:00</td>
+          <td class="time">14:00</td>
+          <td class="time">14:00</td>
+          <td class="time">14:00</td>
+          <td class="time">14:00</td>
+        </tr>
+        <tr class="table_time">
+          <td class="time">16:00</td>
+          <td class="time">16:00</td>
+          <td class="time">16:00</td>
+          <td class="time">16:00</td>
+          <td class="time">16:00</td>
+          <td class="time">16:00</td>
+          <td class="time">16:00</td>
+        </tr>
+        <tr class="table_time">
+          <td class="time">18:00</td>
+          <td class="time">18:00</td>
+          <td class="time">18:00</td>
+          <td class="time">18:00</td>
+          <td class="time">18:00</td>
+          <td class="time">18:00</td>
+          <td class="time">18:00</td>
+        </tr>
+        <tr class="table_time">
+          <td class="time">20:00</td>
+          <td class="time">20:00</td>
+          <td class="time">20:00</td>
+          <td class="time">20:00</td>
+          <td class="time">20:00</td>
+          <td class="time">20:00</td>
+          <td class="time">20:00</td>
+        </tr>
+        <tr class="table_time">
+          <td class="time">22:00</td>
+          <td class="time">22:00</td>
+          <td class="time">22:00</td>
+          <td class="time">22:00</td>
+          <td class="time">22:00</td>
+          <td class="time">22:00</td>
+          <td class="time">22:00</td>
+        </tr>
+      </table>
+    </tbody>
+  </div>
 
-	<div>
-		<form></form>
-	</div>
+  <form class="info-container">
+    <label for="fname">First name:</label>
+    <input class="fname" placeholder="First name" type="text" name="fname">
+
+    <div class="info-column">
+      <ul class="info-list">
+        <li class="info-list_item">Електронна поща
+          <div class="list_item_toogle">
+
+          </div>
+        </li>
+        <li class="info-list_item">Име
+          <div class="list_item_toogle">
+
+          </div>
+        </li>
+        <li class="info-list_item">Телефонен номер
+          <div class="list_item_toogle">
+
+          </div>
+        </li>
+        <li class="info-list_item">Име на рожденика
+          <div class="list_item_toogle">
+
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="info-column">
+      <ul class="info-list">
+        <li class="info-list_item">Възраст, която навърша
+          <div class="list_item_toogle">
+
+          </div>
+        </li>
+        <li class="info-list_item">Брой играчи
+          <div class="list_item_toogle">
+
+          </div>
+        </li>
+        <li class="info-list_item">Език на играта
+          <div class="list_item_toogle">
+
+          </div>
+        </li>
+        <li class="info-list_item">Деца до 14 години
+          <div class="list_item_toogle">
+
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="info-column">
+      <ul class="info-list">
+        <li class="info-list_item">Наем на дъполнителна стая
+          <div class="list_item_toogle">
+
+          </div>
+        </li>
+        <li class="info-list_item">Наем на залата за:
+          <div class="list_item_toogle">
+
+          </div>
+        </li>
+        <li class="info-list_item">Кетъринг
+          <div class="list_item_toogle">
+
+          </div>
+        </li>
+        <li class="info-list_item">Аниматор
+          <div class="list_item_toogle">
+
+          </div>
+        </li>
+      </ul>
+    </div>
+  </form>
+
 </section>
