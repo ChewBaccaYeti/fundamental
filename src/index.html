@@ -132,23 +132,31 @@
 
     <include src="./partials/video.html"></include>
 
-    <section class="video_section">
-      <div class="video_container">
-        <div class="video_text">
+    <section class="video-section">
+      <div class="video-container">
+        <div class="video-text">
           <h6>Нашата атмосфера</h6>
           <h1>Вижте как се случва магията при нас</h1>
         </div>
         <div class="player">
-          <video class="video" controls>
-            <source src="video/sintel-short.mp4" type="video/mp4" />
-            <source src="video/sintel-short.webm" type="video/webm" />
-          </video>
+          <iframe class="rounded-xl"
+            id="vimeo-player"
+            src="https://player.vimeo.com/video/236203659"
+            width="1307px"
+            height="650px"
+            frameborder="0"
+            allowfullscreen
+            allow="autoplay; encrypted-media"></iframe>
+    <script src="./scripts/video.js" type="module"></script>
         </div>
-        <div class="video_puddles-container">
-          <svg class="video_yellow" width="1590px" height="1462px">
+        <div class="video-puddles_container">
+          <svg class="ellipse" width="605px" height="176px">
+            <use href="./images/svg/svg_folder/Ellipse.svg"></use>
+          </svg>
+          <svg class="video-yellow" width="1590px" height="1462px">
             <use href="./images/svg/sprite-devs.svg#icon-video_yellow"></use>
           </svg>
-          <svg class="video_purple" width="896.51px" height="1069.38px">
+          <svg class="video-purple" width="896.51px" height="1069.38px">
             <use href="./images/svg/sprite-devs.svg#icon-video_purple"></use>
           </svg>
         </div>
@@ -305,21 +313,29 @@
 
     <include src="./partials/questions.html"></include>
 
-    <section class="questions_section">
-      <div class="questions_container">
-        <div class="questions_text">
-          <h6 class="questions_article">На място</h6>
-          <p class="questions_paragraph">Усетете атмосфера</p>
+    <section class="questions-section">
+      <div class="questions-container">
+        <div class="questions-text">
+          <h6 class="questions-article">На място</h6>
+          <p class="questions-paragraph">Усетете атмосфера</p>
         </div>
 
-        <div class="questions_photos">
+        <div class="questions-photos">
           <div class="grid gap-7">
             <img width="353px" src="./images/group1.png" alt="Partyhard" />
             <img width="353px" src="./images/cake-pic.png" alt="B-day cake" />
           </div>
           <div class="grid gap-7">
-            <img width="353px" src="./images/two-kids.png" alt="Boy and girl posing"/>
-            <img width="363px" src="./images/group2.png" alt="Kids football club b-day"/>
+            <img
+              width="353px"
+              src="./images/two-kids.png"
+              alt="Boy and girl posing"
+            />
+            <img
+              width="363px"
+              src="./images/group2.png"
+              alt="Kids football club b-day"
+            />
           </div>
           <div class="grid gap-7">
             <img width="353px" src="./images/group3.png" alt="Kitchen" />
@@ -327,50 +343,71 @@
           </div>
         </div>
 
-        <div class="toggle_form-container">
-          <div class="questions_text">
-            <h6 class="questions_article">Често задавани въпроси</h6>
-            <h3 class="questions_paragraph">Остана нещо неясно?</h3>
+        <div class="toggle-form_container">
+          <div class="questions-text">
+            <h6 class="questions-article">Често задавани въпроси</h6>
+            <h3 class="questions-paragraph">Остана нещо неясно?</h3>
           </div>
           <div class="toggle-container">
-            <div class="toggle-item border-2 border-zinc-300 rounded-lg bg-white">
-              What are the services provided to customers?
-              <button type="button">
-                <svg class="vector" width="12" height="7">
-                  <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
-                </svg>
-              </button>
-            </div>
-            <div class="toggle-item border-2 border-zinc-300 rounded-lg bg-white">
-              How can I submit a proposal for cooperation?
-              <svg width="12" height="7">
-                <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
-              </svg>
-            </div>
-            <div class="toggle-item border-2 border-zinc-300 rounded-lg bg-white">
-              I come from a faraway place, can collaboration be done full time
-              online through several meeting applications?
-              <svg width="12" height="7">
-                <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
-              </svg>
-            </div>
-            <div class="toggle-item border-2 border-zinc-300 rounded-lg bg-white">
-              How do I get the payment complete?
-              <svg width="12" height="7">
-                <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
-              </svg>
-            </div>
-            <div class="toggle-item border-2 border-zinc-300 rounded-lg bg-white">
-              How long can the collaboration last?
-              <svg width="12" height="7">
-                <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
-              </svg>
-            </div>
+            <ul class="toggle-list">
+              <li class="toggle-list_item">
+                <div
+                  class="toggle-item flex justify-between items-center w-1120 h-88 p-8 rounded-lg border-2 border-zinc-300 bg-white">
+                  What are the services provided to customers?
+                  <button type="button">
+                    <svg class="vector" width="12" height="7">
+                      <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li class="toggle-list_item">
+                <div
+                  class="toggle-item flex justify-between items-center w-1120px h-88px p-8 rounded-lg border-2 border-zinc-300 bg-white">
+                  How can I submit a proposal for cooperation?
+                  <svg width="12" height="7">
+                    <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="toggle-list_item">
+                <div
+                  class="toggle-item flex justify-between items-center w-1120 h-88 p-8 rounded-lg border-2 border-zinc-300 bg-white">
+                  I come from a faraway place, can collaboration be done full time
+                  online through several meeting applications?
+                  <svg width="12" height="7">
+                    <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="toggle-list_item">
+                <div
+                  class="toggle-item flex justify-between items-center w-1120 h-88 p-8 rounded-lg border-2 border-zinc-300 bg-white">
+                  How do I get the payment complete?
+                  <svg width="12" height="7">
+                    <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="toggle-list_item">
+                <div
+                  class="toggle-item flex justify-between items-center w-1120 h-88 p-8 rounded-lg border-2 border-zinc-300 bg-white">
+                  How long can the collaboration last?
+                  <svg width="12" height="7">
+                    <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <svg class="questions_purple" width="734.14px" height="1005.89px"><use href="./images/svg/sprite-devs.svg#icon-questions_purple"></use></svg>
-      <svg class="questions_green" width="894px" height="993px"><use href="./images/svg/sprite-devs.svg#icon-questions_green"></use></svg>
+      <svg class="questions_purple" width="734.14px" height="1005.89px">
+        <use href="./images/svg/sprite-devs.svg#icon-questions_purple"></use>
+      </svg>
+      <svg class="questions_green" width="894px" height="993px">
+        <use href="./images/svg/sprite-devs.svg#icon-questions_green"></use>
+      </svg>
     </section>
 
     <include src="./partials/reservation.html"></include>
