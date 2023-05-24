@@ -49,20 +49,21 @@ html {
 
   --duration: 250ms;
   --longer: 550ms;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --timing-function: cubic-bezier(.51,.5,.39,.4);
+  --box-shadow: 0px 0px 5px 0px #000000;
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   overflow-x: hidden;
 }
 
 section {
-  width: 100%;
+  width: 100vw;
 }
 
 main {
-  width: 100%;
+  width: 100vw;
 }
 
 footer {
@@ -87,14 +88,17 @@ footer {
 }
 .button:hover {
 background-color: var(--button-hover);
--webkit-box-shadow: 0px 0px 5px 0px #000000;
-box-shadow: 0px 0px 5px 0px #000000;
+-webkit-box-shadow: var(--box-shadow);
+box-shadow: var(--box-shadow);
+transition-property: var(--box-shadow);
+transition-duration: var(--duration);
+transition-timing-function: var(--timing-function);
 }
 .button:focus {
 cursor: pointer;
 background-color: var(--button-focus);
--webkit-box-shadow: 0px 0px 5px 0px #000000;
-box-shadow: 0px 0px 5px 0px #000000;
+-webkit-box-shadow: var(--box-shadow);
+box-shadow: var(--box-shadow);
 }
 
 /* Header section  -------------------------------------------------------------------*/
@@ -825,45 +829,74 @@ box-shadow: 0px 0px 5px 0px #000000;
 /* Toggle form */
 
 .toggle-form_container {
-  position: relative;
-  z-index: 3;
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
+    width: 1440px;
     padding: 0px 160px 0px 160px;
-    margin: 180px 0px;
+    margin: 180px auto;
 }
 
-.toggle-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* Overlay area */
 
 .toggle-list {
   display: flex;
+  justify-content: center;
+  align-items: space-around;
   flex-direction: column;
   gap: 32px;
 }
 
-.toggle-list_item {}
+.toggle-list_item {
+  position: relative;
+  z-index: 3;
 
-.toggle-item {
-  padding: 32px;
+    gap: 40px;
+    transition-property: var(--box-shadow);
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
 }
-
-.toggle-item:hover {
+.toggle-list_item:hover {
   cursor: pointer;
   background-color: gainsboro;
-  -webkit-box-shadow: 0px 0px 5px 0px #000000;
-  box-shadow: 0px 0px 5px 0px #000000;
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+  transition-property: var(--box-shadow);
+  transition-duration: 100ms;
+  transition-timing-function: var(--timing-function);
 }
 
-.toggle-item:focus > svg {
-  transform: rotate(180deg);
+.toggle-paragraph {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+
+  color: #111029;
+}
+
+.toggle-paragraph_content {}
+
+.toggle-text {
+  opacity: 1;
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 32px;
+
+  display: flex;
+  align-items: center;
+
+  color: #6B6B6B;
+
+  border-top: 1px solid #D8D8D8;
 }
 
 .questions_purple {
@@ -882,24 +915,24 @@ box-shadow: 0px 0px 5px 0px #000000;
 
 /* Reservation section -------------------------------------------------------------------*/
 
-.reservation_section {
+.reservation-section {
   z-index: 5;
   position: relative;
   background-color: #EEF4FF;
 }
 
-.reservation_text {
-  padding-top: 99px;
-  margin: 0px 400px 113px;
-  gap: 24px;
-
+.reservation-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+    padding-top: 99px;
+    margin: 0px 400px 113px;
+    gap: 24px;
 }
 
-.reservation_article {
+.reservation-article {
   width: 1120px;
 
   font-family: 'Poppins';
@@ -914,19 +947,19 @@ box-shadow: 0px 0px 5px 0px #000000;
   color: #111029;
 }
 
-.reservation_dates {
-  width: 668px;
-  height: 42px;
-
+.reservation-dates {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+    width: 668px;
+    height: 42px;
 }
 
 .dates_left {}
 
-.reservation_paragraph {
+.reservation-paragraph {
   font-family: 'Hind';
   font-style: normal;
   font-weight: 400;
@@ -939,15 +972,15 @@ box-shadow: 0px 0px 5px 0px #000000;
 
 .dates_right {}
 
-.reservation_container {
-  margin: 113px 138px 121px;
-
+.reservation-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+    margin: 113px 138px 121px;
 }
 
-.reservation_body {
+.reservation-body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -955,63 +988,64 @@ box-shadow: 0px 0px 5px 0px #000000;
   align-items: center;
 }
 
-.reservation_table {
-  width: 1646px;
-  height: 674px;
-  padding: 0px;
-
+.reservation-table {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
-  border: 1px solid gainsboro;
-  background-color: #FCFCFC;
+
+    width: 1646px;
+    height: 674px;
+    padding: 0px;
+
+    border-radius: 8px;
+    border: 1px solid gainsboro;
+    background-color: #FCFCFC;
 }
 
-.table_date {
-  width: 1646px;
-
+.table-date {
   display: flex;
   align-items: center;
+
+    width: 1646px;
 }
 
-.table_days {
-  width: 240px;
-  height: 100px;
-  padding-left: 22px;
-  gap: 10px;
-
+.table-days {
   display: flex;
   align-items: center;
-  border-bottom: 1.5px solid #4C40F7;
+
+    width: 240px;
+    height: 100px;
+    padding-left: 22px;
+    gap: 10px;
+
+    border-bottom: 1.5px solid #4C40F7;
 }
 
-.table_time {
-  width: 1646px;
-
+.table-time {
   display: flex;
   align-items: center;
+
+    width: 1646px;
 }
 
 .time {
-  width: 240px;
-  height: 82px;
-  padding-left: 12px;
-
   display: flex;
   align-items: center;
 
-  border-top: 1.5px solid #4C40F7;
-  border-left: 1px solid gainsboro;
-  border-right: 1px solid gainsboro;
+    width: 240px;
+    height: 82px;
+    padding-left: 12px;
+
+    border-top: 1.5px solid #4C40F7;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
 }
 .time:hover {
   background-color: gainsboro;
-  -webkit-box-shadow: 0px 0px 5px 0px #000000;
-  box-shadow: 0px 0px 5px 0px #000000;
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
 }
-
 /* Info section -------------------------------------------------------------------*/
 
 .info-container {

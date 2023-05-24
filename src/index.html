@@ -6,6 +6,9 @@
     <meta name="description" content="Landing page for escape room" />
     <title>Landing Page</title>
 
+    <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+    rel="stylesheet"/>
     <link rel="stylesheet" href="/public/styles.css"/>
     <link rel="stylesheet" href="/src/styles.css"/>
 
@@ -30,7 +33,13 @@
     </header>
 <main>
 
+
+
+
     <include src="./partials/hero.html"></include>
+
+
+
 
     <section class="hero-section">
       <div class="hero-container">
@@ -67,7 +76,13 @@
     </section>
 </main>
 
+
+
+
     <include src="./partials/escape.html"></include>
+
+
+
 
     <section class="escape_section">
       <!-- <svg class="escape_arrow" width="2171.43px" height="356.29px"><use href="./images/svg/sprite-devs.svg#icon-escape"></use></svg> -->
@@ -130,7 +145,13 @@
       </div>
     </section>
 
+
+
+
     <include src="./partials/video.html"></include>
+
+
+
 
     <section class="video-section">
       <div class="video-container">
@@ -163,7 +184,13 @@
       </div>
     </section>
 
+
+
+
     <include src="./partials/program.html"></include>
+
+
+
 
     <section class="program_section">
       <div class="program_text">
@@ -311,7 +338,13 @@
       </div>
     </section>
 
+
+
+
     <include src="./partials/questions.html"></include>
+
+
+
 
     <section class="questions-section">
       <div class="questions-container">
@@ -348,80 +381,145 @@
             <h6 class="questions-article">Често задавани въпроси</h6>
             <h3 class="questions-paragraph">Остана нещо неясно?</h3>
           </div>
-          <div class="toggle-container">
-            <ul class="toggle-list">
-              <li class="toggle-list_item">
-                <div
-                  class="toggle-item flex justify-between items-center w-1120 h-88 p-8 rounded-lg border-2 border-zinc-300 bg-white">
-                  What are the services provided to customers?
-                  <button type="button">
-                    <svg class="vector" width="12" height="7">
+
+          <ul class="toggle-list">
+            <li class="toggle-list_item
+            w-1120 h-240
+            flex items-center justify-between
+            rounded-lg border-2 border-zinc-300
+            bg-white p-8">
+              <div>
+                  <p class="toggle-paragraph">What are the services provided to customers?</p>
+                  <div class="toggle-paragraph_content">
+                      <p class="toggle-text">Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
+                  </div>
+              </div>
+              <button onclick="toggle(this)">
+                  <svg class="vector" width="12" height="7">
                       <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
-                    </svg>
-                  </button>
-                </div>
-              </li>
-              <li class="toggle-list_item">
-                <div
-                  class="toggle-item flex justify-between items-center w-1120px h-88px p-8 rounded-lg border-2 border-zinc-300 bg-white">
+                  </svg>
+              </button>
+          </li>
+
+            <li
+              class="toggle-list_item
+              w-1120 h-240
+              flex items-center justify-between
+              rounded-lg border-2 border-zinc-300
+              bg-white p-8"
+            >
+              <div>
+                <p class="toggle-paragraph">
                   How can I submit a proposal for cooperation?
-                  <svg width="12" height="7">
-                    <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
-                  </svg>
+                </p>
+                <div class="toggle-content">
+                  <p>Additional content goes here.</p>
                 </div>
-              </li>
-              <li class="toggle-list_item">
-                <div
-                  class="toggle-item flex justify-between items-center w-1120 h-88 p-8 rounded-lg border-2 border-zinc-300 bg-white">
-                  I come from a faraway place, can collaboration be done full time
-                  online through several meeting applications?
-                  <svg width="12" height="7">
-                    <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
-                  </svg>
+              </div>
+              <button onclick="toggle(this)">
+                <svg class="vector" width="12" height="7">
+                  <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
+                </svg>
+              </button>
+            </li>
+
+            <li
+              class="toggle-list_item
+              w-1120 h-240
+              flex items-center justify-between
+              rounded-lg border-2 border-zinc-300
+              bg-white p-8"
+            >
+              <div>
+                <p class="toggle-paragraph">
+                  I come from a faraway place, can collaboration be done full time online through several meeting applications?
+                </p>
+                <div class="toggle-content">
+                  <p>Additional content goes here.</p>
                 </div>
-              </li>
-              <li class="toggle-list_item">
-                <div
-                  class="toggle-item flex justify-between items-center w-1120 h-88 p-8 rounded-lg border-2 border-zinc-300 bg-white">
+              </div>
+              <button onclick="toggle(this)">
+                <svg class="vector" width="12" height="7">
+                  <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
+                </svg>
+              </button>
+            </li>
+
+            <li
+              class="toggle-list_item
+              w-1120 h-240
+              flex items-center justify-between
+              rounded-lg border-2 border-zinc-300
+              bg-white p-8"
+            >
+              <div>
+                <p class="toggle-paragraph">
                   How do I get the payment complete?
-                  <svg width="12" height="7">
-                    <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
-                  </svg>
+                </p>
+                <div class="toggle-content">
+                  <p>Additional content goes here.</p>
                 </div>
-              </li>
-              <li class="toggle-list_item">
-                <div
-                  class="toggle-item flex justify-between items-center w-1120 h-88 p-8 rounded-lg border-2 border-zinc-300 bg-white">
+              </div>
+              <button onclick="toggle(this)">
+                <svg class="vector" width="12" height="7">
+                  <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
+                </svg>
+              </button>
+            </li>
+
+            <li
+              class="toggle-list_item
+              w-1120 h-240
+              flex items-center justify-between
+              rounded-lg border-2 border-zinc-300
+              bg-white p-8"
+            >
+              <div>
+                <p class="toggle-paragraph">
                   How long can the collaboration last?
-                  <svg width="12" height="7">
-                    <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
-                  </svg>
+                </p>
+                <div class="toggle-content">
+                  <p>Additional content goes here.</p>
                 </div>
-              </li>
-            </ul>
-          </div>
+              </div>
+              <button onclick="toggle(this)">
+                <svg class="vector" width="12" height="7">
+                  <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
+
       <svg class="questions_purple" width="734.14px" height="1005.89px">
         <use href="./images/svg/sprite-devs.svg#icon-questions_purple"></use>
       </svg>
       <svg class="questions_green" width="894px" height="993px">
         <use href="./images/svg/sprite-devs.svg#icon-questions_green"></use>
       </svg>
+
+      <script src="./scripts/toggleDropDown.js"></script>
     </section>
+
+
+
 
     <include src="./partials/reservation.html"></include>
 
-    <section class="reservation_section">
-      <div class="reservation_text">
-        <h2 class="reservation_article">Направи резервация</h2>
-        <div class="reservation_dates">
+
+
+
+    <section class="reservation-section">
+      <div class="reservation-text">
+        <h2 class="reservation-article">Направи резервация</h2>
+        <div class="reservation-dates">
           <button type="button" class="dates_left">
             <svg width="32px" height="32px">
               <use href="./images/svg/sprite-devs.svg#icon-ArrowCircleLeft"></use>
             </svg>
           </button>
-          <time class="reservation_paragraph">03.04.2023 — 09.04.2023</time>
+          <time class="reservation-paragraph">03.04.2023 — 09.04.2023</time>
           <button type="button" class="dates_right">
             <svg width="32px" height="32px">
               <use href="./images/svg/sprite-devs.svg#icon-ArrowCircleRight"></use>
@@ -430,11 +528,11 @@
         </div>
       </div>
 
-      <div class="reservation_container">
-        <tbody class="reservation_body">
-          <table class="reservation_table">
-            <tr class="table_date">
-              <th class="table_days">
+      <div class="reservation-container">
+        <tbody class="reservation-body">
+          <table class="reservation-table">
+            <tr class="table-date">
+              <th class="table-days">
                 <svg width="24px" height="22px">
                   <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
                 </svg>
@@ -442,7 +540,7 @@
                 <br />
                 Понеделник
               </th>
-              <th class="table_days">
+              <th class="table-days">
                 <svg width="24px" height="22px">
                   <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
                 </svg>
@@ -450,7 +548,7 @@
                 <br />
                 Вторник
               </th>
-              <th class="table_days">
+              <th class="table-days">
                 <svg width="24px" height="22px">
                   <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
                 </svg>
@@ -458,7 +556,7 @@
                 <br />
                 Сряда
               </th>
-              <th class="table_days">
+              <th class="table-days">
                 <svg width="24px" height="22px">
                   <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
                 </svg>
@@ -466,7 +564,7 @@
                 <br />
                 Четвъртък
               </th>
-              <th class="table_days">
+              <th class="table-days">
                 <svg width="24px" height="22px">
                   <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
                 </svg>
@@ -474,7 +572,7 @@
                 <br />
                 Петък
               </th>
-              <th class="table_days">
+              <th class="table-days">
                 <svg width="24px" height="22px">
                   <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
                 </svg>
@@ -482,7 +580,7 @@
                 <br />
                 Събота
               </th>
-              <th class="table_days">
+              <th class="table-days">
                 <svg width="24px" height="22px">
                   <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
                 </svg>
@@ -491,7 +589,7 @@
                 Неделя
               </th>
             </tr>
-            <tr class="table_time">
+            <tr class="table-time">
               <td class="time">10:00</td>
               <td class="time">10:00</td>
               <td class="time">10:00</td>
@@ -500,7 +598,7 @@
               <td class="time">10:00</td>
               <td class="time">10:00</td>
             </tr>
-            <tr class="table_time">
+            <tr class="table-time">
               <td class="time">12:00</td>
               <td class="time">12:00</td>
               <td class="time">12:00</td>
@@ -509,7 +607,7 @@
               <td class="time">12:00</td>
               <td class="time">12:00</td>
             </tr>
-            <tr class="table_time">
+            <tr class="table-time">
               <td class="time">14:00</td>
               <td class="time">14:00</td>
               <td class="time">14:00</td>
@@ -518,7 +616,7 @@
               <td class="time">14:00</td>
               <td class="time">14:00</td>
             </tr>
-            <tr class="table_time">
+            <tr class="table-time">
               <td class="time">16:00</td>
               <td class="time">16:00</td>
               <td class="time">16:00</td>
@@ -527,7 +625,7 @@
               <td class="time">16:00</td>
               <td class="time">16:00</td>
             </tr>
-            <tr class="table_time">
+            <tr class="table-time">
               <td class="time">18:00</td>
               <td class="time">18:00</td>
               <td class="time">18:00</td>
@@ -536,7 +634,7 @@
               <td class="time">18:00</td>
               <td class="time">18:00</td>
             </tr>
-            <tr class="table_time">
+            <tr class="table-time">
               <td class="time">20:00</td>
               <td class="time">20:00</td>
               <td class="time">20:00</td>
@@ -545,7 +643,7 @@
               <td class="time">20:00</td>
               <td class="time">20:00</td>
             </tr>
-            <tr class="table_time">
+            <tr class="table-time">
               <td class="time">22:00</td>
               <td class="time">22:00</td>
               <td class="time">22:00</td>
