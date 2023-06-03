@@ -9,6 +9,9 @@
     <link
     href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
     rel="stylesheet"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="/public/styles.css"/>
     <link rel="stylesheet" href="/src/styles.css"/>
 
@@ -46,7 +49,7 @@
         <div class="hero-images">
           <svg class="purplePuddle"><use href="./images/svg/sprite-devs.svg#icon-purplePuddle_svg"></use></svg>
           <svg class="yellowPuddle"><use href="./images/svg/sprite-devs.svg#icon-yellowPuddle_svg"></use></svg>
-          <img class="hero-photo" src="./images/heroes_photo.png">
+          <img class="hero-photo" src="./images/heroes_photo.png" alt="Kids with cake">
           <svg class="arrow-group"><use href="./images/svg/sprite-devs.svg#icon-arrowGroup_svg"></use></svg>
         </div>
         <div class="hero_-nfo">
@@ -90,6 +93,7 @@
         <img
           class="escape_img"
           src="./images/ananieva_a_scene_where_van_gogh_is_smiling_and_happy_in_a_pixar_2068550e-8383-4f95-afc4-fcf60ad52b97 1.png"
+          alt="Van Gogh with kids"
         />
         <div class="escape_info">
           <div class="escape_texts">
@@ -355,24 +359,24 @@
 
         <div class="questions-photos">
           <div class="grid gap-7">
-            <img width="353px" src="./images/group1.png" alt="Partyhard" />
-            <img width="353px" src="./images/cake-pic.png" alt="B-day cake" />
+            <img width="353" src="./images/group1.png" alt="Partyhard" />
+            <img width="352" src="./images/cake-pic.png" alt="B-day cake" />
           </div>
           <div class="grid gap-7">
             <img
-              width="353px"
+              width="353"
               src="./images/two-kids.png"
               alt="Boy and girl posing"
             />
             <img
-              width="363px"
+              width="353"
               src="./images/group2.png"
               alt="Kids football club b-day"
             />
           </div>
           <div class="grid gap-7">
-            <img width="353px" src="./images/group3.png" alt="Kitchen" />
-            <img width="353px" src="./images/group4.png" alt="Boys smiling" />
+            <img width="352" src="./images/group3.png" alt="Kitchen" />
+            <img width="353" src="./images/group4.png" alt="Boys smiling" />
           </div>
         </div>
 
@@ -382,13 +386,22 @@
             <h3 class="questions-paragraph">Остана нещо неясно?</h3>
           </div>
 
+        <div class="questions-puddles_container">
+          <svg class="questions_purple" width="734.14px" height="1005.89px">
+            <use href="./images/svg/sprite-devs.svg#icon-questions_purple"></use>
+          </svg>
+          <svg class="questions_green" width="894px" height="993px">
+            <use href="./images/svg/sprite-devs.svg#icon-questions_green"></use>
+          </svg>
+        </div>
+
           <ul class="toggle-list">
             <li class="toggle-list_item
             w-1120 h-240
             flex items-center justify-between
             rounded-lg border-2 border-zinc-300
             bg-white p-8">
-              <div>
+              <div class="toggle-content">
                   <p class="toggle-paragraph">What are the services provided to customers?</p>
                   <div class="toggle-paragraph_content">
                       <p class="toggle-text">Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
@@ -401,103 +414,80 @@
               </button>
           </li>
 
-            <li
-              class="toggle-list_item
-              w-1120 h-240
-              flex items-center justify-between
-              rounded-lg border-2 border-zinc-300
-              bg-white p-8"
-            >
-              <div>
-                <p class="toggle-paragraph">
-                  How can I submit a proposal for cooperation?
-                </p>
-                <div class="toggle-content">
-                  <p>Additional content goes here.</p>
-                </div>
+            <li class="toggle-list_item
+            w-1120 h-240
+            flex items-center justify-between
+            rounded-lg border-2 border-zinc-300
+            bg-white p-8">
+              <div class="toggle-content">
+                  <p class="toggle-paragraph">How can I submit a proposal for cooperation?</p>
+                  <div class="toggle-paragraph_content">
+                      <p class="toggle-text">Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
+                  </div>
               </div>
               <button onclick="toggle(this)">
-                <svg class="vector" width="12" height="7">
-                  <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
-                </svg>
+                  <svg class="vector" width="12" height="7">
+                      <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
+                  </svg>
               </button>
-            </li>
+          </li>
 
-            <li
-              class="toggle-list_item
-              w-1120 h-240
-              flex items-center justify-between
-              rounded-lg border-2 border-zinc-300
-              bg-white p-8"
-            >
-              <div>
-                <p class="toggle-paragraph">
-                  I come from a faraway place, can collaboration be done full time online through several meeting applications?
-                </p>
-                <div class="toggle-content">
-                  <p>Additional content goes here.</p>
-                </div>
+            <li class="toggle-list_item
+            w-1120 h-240
+            flex items-center justify-between
+            rounded-lg border-2 border-zinc-300
+            bg-white p-8">
+              <div class="toggle-content">
+                  <p class="toggle-paragraph">I come from a faraway place, can collaboration be done full time online through several meeting applications?</p>
+                  <div class="toggle-paragraph_content">
+                      <p class="toggle-text">Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
+                  </div>
               </div>
               <button onclick="toggle(this)">
-                <svg class="vector" width="12" height="7">
-                  <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
-                </svg>
+                  <svg class="vector" width="12" height="7">
+                      <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
+                  </svg>
               </button>
-            </li>
+          </li>
 
-            <li
-              class="toggle-list_item
-              w-1120 h-240
-              flex items-center justify-between
-              rounded-lg border-2 border-zinc-300
-              bg-white p-8"
-            >
-              <div>
-                <p class="toggle-paragraph">
-                  How do I get the payment complete?
-                </p>
-                <div class="toggle-content">
-                  <p>Additional content goes here.</p>
-                </div>
+            <li class="toggle-list_item
+            w-1120 h-240
+            flex items-center justify-between
+            rounded-lg border-2 border-zinc-300
+            bg-white p-8">
+              <div class="toggle-content">
+                  <p class="toggle-paragraph">How do I get the payment complete?</p>
+                  <div class="toggle-paragraph_content">
+                      <p class="toggle-text">Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
+                  </div>
               </div>
               <button onclick="toggle(this)">
-                <svg class="vector" width="12" height="7">
-                  <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
-                </svg>
+                  <svg class="vector" width="12" height="7">
+                      <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
+                  </svg>
               </button>
-            </li>
+          </li>
 
-            <li
-              class="toggle-list_item
-              w-1120 h-240
-              flex items-center justify-between
-              rounded-lg border-2 border-zinc-300
-              bg-white p-8"
-            >
-              <div>
-                <p class="toggle-paragraph">
-                  How long can the collaboration last?
-                </p>
-                <div class="toggle-content">
-                  <p>Additional content goes here.</p>
-                </div>
+            <li class="toggle-list_item
+            w-1120 h-240
+            flex items-center justify-between
+            rounded-lg border-2 border-zinc-300
+            bg-white p-8">
+              <div class="toggle-content">
+                  <p class="toggle-paragraph">How long can the collaboration last?</p>
+                  <div class="toggle-paragraph_content">
+                      <p class="toggle-text">Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
+                  </div>
               </div>
               <button onclick="toggle(this)">
-                <svg class="vector" width="12" height="7">
-                  <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
-                </svg>
+                  <svg class="vector" width="12" height="7">
+                      <use href="./images/svg/sprite-devs.svg#icon-Vector"></use>
+                  </svg>
               </button>
-            </li>
+          </li>
           </ul>
         </div>
       </div>
-
-      <svg class="questions_purple" width="734.14px" height="1005.89px">
-        <use href="./images/svg/sprite-devs.svg#icon-questions_purple"></use>
-      </svg>
-      <svg class="questions_green" width="894px" height="993px">
-        <use href="./images/svg/sprite-devs.svg#icon-questions_green"></use>
-      </svg>
 
       <script src="./scripts/toggleDropDown.js"></script>
     </section>
@@ -656,62 +646,227 @@
         </tbody>
       </div>
 
-      <form class="info-container">
-        <div class="info-column_container">
-          <ul class="info-list">
-            <li class="info-list_item">Електронна поща
-              <input class="info-input" placeholder="Електронна поща" type="text">
+      <div class="info-container">
+        <form class="info-form">
+          <div class="column-container">
+            <div class="info-column_container">
+              <ul class="info-list">
+                <li class="info-list_item">
+                  <p class="info-list_paragraph">Електронна поща</p>
+                  <label>
+                    <input
+                      class="info-input"
+                      placeholder="Електронна поща"
+                      type="text"
+                      name="input"
+                    />
+                  </label>
+                </li>
+
+                <li class="info-list_item">
+                  <p class="info-list_paragraph">Име</p>
+                  <label>
+                    <input
+                      class="info-input"
+                      placeholder="Име"
+                      type="text"
+                      name="input"
+                    />
+                  </label>
+                </li>
+
+                <li class="info-list_item">
+                  <p class="info-list_paragraph">Телефонен номер</p>
+                  <label>
+                    <input
+                      class="info-input"
+                      placeholder="Телефонен номер"
+                      type="text"
+                      name="input"
+                    />
+                  </label>
+                </li>
+
+                <li class="info-list_item">
+                  <p class="info-list_paragraph">Име на рожденика</p>
+                  <label>
+                    <input
+                      class="info-input"
+                      placeholder="Име на рожденика"
+                      type="text"
+                      name="input"
+                    />
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="info-column_container">
+              <ul class="info-list">
+                <li class="info-list_item">
+                  <p class="info-list_paragraph">Възраст, която навърша</p>
+                  <label>
+                    <input
+                      class="info-input"
+                      placeholder="Възраст, която навърша"
+                      type="text"
+                      name="input"
+                    />
+                  </label>
+                </li>
+
+                <li class="info-list_item">
+                  <p class="info-list_paragraph">Брой играчи</p>
+                  <label>
+                    <input
+                      class="info-input"
+                      placeholder="First name"
+                      type="text"
+                      name="input"
+                    />
+                  </label>
+                </li>
+
+                <li class="info-list_item">
+                  <p class="info-list_paragraph">Език на играта</p>
+                  <label>
+                    <input
+                      class="info-input"
+                      placeholder="First name"
+                      type="text"
+                      name="input"
+                    />
+                  </label>
+                </li>
+
+                <li class="info-list_item">
+                  <label>
+                    <p class="info-list_paragraph">Деца до 14 години</p>
+                    <input
+                      class="info-input"
+                      placeholder="First name"
+                      type="text"
+                      name="input"
+                    />
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="info-column_container">
+              <ul class="info-list">
+                <li class="info-list_item">
+                  <p class="info-list_paragraph">Наем на дъполнителна стая</p>
+                  <label>
+                    <input
+                      class="info-input"
+                      placeholder="First name"
+                      type="text"
+                      name="input"
+                    />
+                  </label>
+                </li>
+
+                <li class="info-list_item">
+                  <p class="info-list_paragraph">Наем на залата за:</p>
+                  <label>
+                    <input
+                      class="info-input"
+                      placeholder="First name"
+                      type="text"
+                      name="input"
+                    />
+                  </label>
+                </li>
+
+                <li class="info-list_item">
+                  <p class="info-list_paragraph">Кетъринг</p>
+                  <label>
+                    <input
+                      class="info-input"
+                      placeholder="First name"
+                      type="text"
+                      name="input"
+                    />
+                  </label>
+                </li>
+
+                <li class="info-list_item">
+                  <p class="info-list_paragraph">Аниматор</p>
+                  <label>
+                    <input
+                      class="info-input"
+                      placeholder="First name"
+                      type="text"
+                      name="input"
+                    />
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="solo-input_container">
+            <label
+              ><p>Код за отстъпка</p>
+              <input
+                class="solo-input"
+                placeholder="Код за отстъпка"
+                type="text"
+                name="input"
+              />
+            </label>
+            <label
+              ><p>Забележки и въпроси</p>
+              <input
+                class="solo-input"
+                placeholder="Забележки и въпроси "
+                type="text"
+                name="input"
+              />
+            </label>
+          </div>
+
+          <ul class="checkboxes-list">
+            <li class="checkboxes-item">
+              <label>
+                <input
+                  class="checkbox w-522"
+                  type="checkbox"
+                  name="form-checkbox"
+                  value="General settings"
+                /><p>Прочетох и се запознах с общите условия за ползване.</p>
+              </label>
             </li>
-            <li class="info-list_item">Име
-              <input class="info-input" placeholder="Име" type="text">
+
+            <li class="checkboxes-item">
+              <label>
+                <input
+                  class="checkbox w-627"
+                  type="checkbox"
+                  name="form-checkbox"
+                  value="Data"
+                /><p>Съгласен съм данните ми да бъдат използвани за маркетингови цели.</p>
+              </label>
             </li>
-            <li class="info-list_item">Телефонен номер
-              <input class="info-input" placeholder="Телефонен номер" type="text">
-            </li>
-            <li class="info-list_item">Име на рожденика
-              <input class="info-input" placeholder="Име на рожденика" type="text">
+
+            <li class="checkboxes-item">
+              <label>
+                <input
+                  class="checkbox w-627"
+                  type="checkbox"
+                  name="form-checkbox"
+                  value="PI security"
+                /><a href="https://www.questhouse.bg/prava-za-zashtita-na-lichnite-danni">Запознат съм с правата за защита на личните данни.</a>
+              </label>
             </li>
           </ul>
-        </div>
-
-        <div class="info-column_container">
-          <ul class="info-list">
-            <li class="info-list_item">Възраст, която навърша
-              <input class="info-input" placeholder="Възраст, която навърша" type="text">
-            </li>
-            <li class="info-list_item">Брой играчи
-              <input class="info-input" placeholder="First name" type="text">
-            </li>
-            <li class="info-list_item">Език на играта
-              <input class="info-input" placeholder="First name" type="text">
-            </li>
-            <li class="info-list_item">Деца до 14 години
-              <input class="info-input" placeholder="First name" type="text">
-            </li>
-          </ul>
-        </div>
-
-        <div class="info-column_container">
-          <ul class="info-list">
-            <li class="info-list_item">Наем на дъполнителна стая
-              <input class="info-input" placeholder="First name" type="text">
-            </li>
-            <li class="info-list_item">Наем на залата за:
-              <input class="info-input" placeholder="First name" type="text">
-            </li>
-            <li class="info-list_item">Кетъринг
-              <input class="info-input" placeholder="First name" type="text">
-            </li>
-            <li class="info-list_item">Аниматор
-              <input class="info-input" placeholder="First name" type="text">
-            </li>
-          </ul>
-        </div>
-        <a href="#"><button type="button" class="button">Запази своя час</button></a>
-      </form>
-
+        </form>
+      </div>
     </section>
-    <footer></footer>
+    <footer>
+      <a href="#"><button type="button" class="button">Запази своя час</button></a>
+    </footer>
 </body>
 </html>
 
