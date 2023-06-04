@@ -17,20 +17,26 @@
 
 </head>
 <body class="body">
+
+
+
     <include src="./partials/header.html"></include>
-    <header class="header_section">
-        <div class="header_container">
-            <nav class="header_navigation">
-                <ul class="header_list">
-                <li><a href="#">За нас</a></li>
-                <li><a href="#">Рожден ден</a></li>
-                <li><a href="#">Тиймбилдинг</a></li>
-                <li><a href="#">Ваучер</a></li>
-                <li><a href="#">Цени</a></li>
-                <li><a href="#">Резервирай</a></li>
-                <li><a href="#">Контакти</a></li>
+
+
+
+    <header class="header-section">
+        <div class="header-container">
+            <nav class="header-navigation">
+                <ul class="header-list">
+                <li class="header-list_item"><a href="#">За нас</a></li>
+                <li class="header-list_item"><a href="#">Рожден ден</a></li>
+                <li class="header-list_item"><a href="#">Тиймбилдинг</a></li>
+                <li class="header-list_item"><a href="#">Ваучер</a></li>
+                <li class="header-list_item"><a href="#">Цени</a></li>
+                <li class="header-list_item"><a href="#">Резервирай</a></li>
+                <li class="header-list_item"><a href="#">Контакти</a></li>
             </ul>
-            <a href="#"><button type="button" class="header_button">резервирай сега!
+            <a href="#"><button type="button" class="header-button">резервирай сега!
             </button></a>
         </nav>
     </header>
@@ -225,7 +231,7 @@
           </li>
 
           <li>
-            <div>
+            <div class="arrow-container">
               <svg class="arrow_above-1" width="266.95px" height="27.67px">
                 <use href="./images/svg/sprite-devs.svg#icon-Ellipse-79"></use>
               </svg>
@@ -248,7 +254,7 @@
           </li>
 
           <li>
-            <div>
+            <div class="arrow-container">
               <svg class="arrow_above-2" width="266.95px" height="27.67px">
                 <use href="./images/svg/sprite-devs.svg#icon-Ellipse-81"></use>
               </svg>
@@ -294,7 +300,7 @@
           </li>
 
           <li>
-            <div>
+            <div class="arrow-container">
               <svg class="arrow_below-1" width="266.95px" height="27.67px">
                 <use href="./images/svg/sprite-devs.svg#icon-Ellipse-79"></use>
               </svg>
@@ -317,7 +323,7 @@
           </li>
 
           <li>
-            <div>
+            <div class="arrow-container">
               <svg class="arrow_below-2" width="266.95px" height="27.67px">
                 <use href="./images/svg/sprite-devs.svg#icon-Ellipse-81"></use>
               </svg>
@@ -519,131 +525,141 @@
       </div>
 
       <div class="reservation-container">
-        <tbody class="reservation-body">
-          <table class="reservation-table">
-            <tr class="table-date">
-              <th class="table-days">
-                <svg width="24px" height="22px">
-                  <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
-                </svg>
-                03.04.2023
-                <br />
-                Понеделник
-              </th>
-              <th class="table-days">
-                <svg width="24px" height="22px">
-                  <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
-                </svg>
-                04.04.2023
-                <br />
-                Вторник
-              </th>
-              <th class="table-days">
-                <svg width="24px" height="22px">
-                  <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
-                </svg>
-                05.04.2023
-                <br />
-                Сряда
-              </th>
-              <th class="table-days">
-                <svg width="24px" height="22px">
-                  <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
-                </svg>
-                06.04.2023
-                <br />
-                Четвъртък
-              </th>
-              <th class="table-days">
-                <svg width="24px" height="22px">
-                  <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
-                </svg>
-                07.04.2023
-                <br />
-                Петък
-              </th>
-              <th class="table-days">
-                <svg width="24px" height="22px">
-                  <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
-                </svg>
-                08.04.2023
-                <br />
-                Събота
-              </th>
-              <th class="table-days">
-                <svg width="24px" height="22px">
-                  <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
-                </svg>
-                09.04.2023
-                <br />
-                Неделя
-              </th>
-            </tr>
-            <tr class="table-time">
-              <td class="time">10:00</td>
-              <td class="time">10:00</td>
-              <td class="time">10:00</td>
-              <td class="time">10:00</td>
-              <td class="time">10:00</td>
-              <td class="time">10:00</td>
-              <td class="time">10:00</td>
-            </tr>
-            <tr class="table-time">
-              <td class="time">12:00</td>
-              <td class="time">12:00</td>
-              <td class="time">12:00</td>
-              <td class="time">12:00</td>
-              <td class="time">12:00</td>
-              <td class="time">12:00</td>
-              <td class="time">12:00</td>
-            </tr>
-            <tr class="table-time">
-              <td class="time">14:00</td>
-              <td class="time">14:00</td>
-              <td class="time">14:00</td>
-              <td class="time">14:00</td>
-              <td class="time">14:00</td>
-              <td class="time">14:00</td>
-              <td class="time">14:00</td>
-            </tr>
-            <tr class="table-time">
-              <td class="time">16:00</td>
-              <td class="time">16:00</td>
-              <td class="time">16:00</td>
-              <td class="time">16:00</td>
-              <td class="time">16:00</td>
-              <td class="time">16:00</td>
-              <td class="time">16:00</td>
-            </tr>
-            <tr class="table-time">
-              <td class="time">18:00</td>
-              <td class="time">18:00</td>
-              <td class="time">18:00</td>
-              <td class="time">18:00</td>
-              <td class="time">18:00</td>
-              <td class="time">18:00</td>
-              <td class="time">18:00</td>
-            </tr>
-            <tr class="table-time">
-              <td class="time">20:00</td>
-              <td class="time">20:00</td>
-              <td class="time">20:00</td>
-              <td class="time">20:00</td>
-              <td class="time">20:00</td>
-              <td class="time">20:00</td>
-              <td class="time">20:00</td>
-            </tr>
-            <tr class="table-time">
-              <td class="time">22:00</td>
-              <td class="time">22:00</td>
-              <td class="time">22:00</td>
-              <td class="time">22:00</td>
-              <td class="time">22:00</td>
-              <td class="time">22:00</td>
-              <td class="time">22:00</td>
-            </tr>
-          </table>
-        </tbody>
+        <div class="reservation-days">
+          <div class="day">
+            <svg width="24px" height="22px">
+              <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+            </svg>
+            03.04.2023
+            <br />
+            Понеделник
+          </div>
+          <div class="day">
+            <svg width="24px" height="22px">
+              <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+            </svg>
+            04.04.2023
+            <br />
+            Вторник
+          </div>
+          <div class="day">
+            <svg width="24px" height="22px">
+              <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+            </svg>
+            05.04.2023
+            <br />
+            Сряда
+          </div>
+          <div class="day">
+            <svg width="24px" height="22px">
+              <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+            </svg>
+            06.04.2023
+            <br />
+            Четвъртък
+          </div>
+          <div class="day">
+            <svg width="24px" height="22px">
+              <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+            </svg>
+            07.04.2023
+            <br />
+            Петък
+          </div>
+          <div class="day">
+            <svg width="24px" height="22px">
+              <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+            </svg>
+            08.04.2023
+            <br />
+            Събота
+          </div>
+          <div class="day">
+            <svg width="24px" height="22px">
+              <use href="./images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+            </svg>
+            09.04.2023
+            <br />
+            Неделя
+          </div>
+        </div>
+        <div class="reservation">
+          <ul class="time-list">
+            <li class="time">10:00</li>
+            <li class="time">12:00</li>
+            <li class="time">14:00</li>
+            <li class="time">16:00</li>
+            <li class="time">18:00</li>
+            <li class="time">20:00</li>
+            <li class="time">22:00</li>
+          </ul>
+        </div>
+        <div class="reservation">
+          <ul class="time-list">
+            <li class="time">10:00</li>
+            <li class="time">12:00</li>
+            <li class="time">14:00</li>
+            <li class="time">16:00</li>
+            <li class="time">18:00</li>
+            <li class="time">20:00</li>
+            <li class="time">22:00</li>
+          </ul>
+        </div>
+        <div class="reservation">
+          <ul class="time-list">
+            <li class="time">10:00</li>
+            <li class="time">12:00</li>
+            <li class="time">14:00</li>
+            <li class="time">16:00</li>
+            <li class="time">18:00</li>
+            <li class="time">20:00</li>
+            <li class="time">22:00</li>
+          </ul>
+        </div>
+        <div class="reservation">
+          <ul class="time-list">
+            <li class="time">10:00</li>
+            <li class="time">12:00</li>
+            <li class="time">14:00</li>
+            <li class="time">16:00</li>
+            <li class="time">18:00</li>
+            <li class="time">20:00</li>
+            <li class="time">22:00</li>
+          </ul>
+        </div>
+        <div class="reservation">
+          <ul class="time-list">
+            <li class="time">10:00</li>
+            <li class="time">12:00</li>
+            <li class="time">14:00</li>
+            <li class="time">16:00</li>
+            <li class="time">18:00</li>
+            <li class="time">20:00</li>
+            <li class="time">22:00</li>
+          </ul>
+        </div>
+        <div class="reservation">
+          <ul class="time-list">
+            <li class="time">10:00</li>
+            <li class="time">12:00</li>
+            <li class="time">14:00</li>
+            <li class="time">16:00</li>
+            <li class="time">18:00</li>
+            <li class="time">20:00</li>
+            <li class="time">22:00</li>
+          </ul>
+        </div>
+        <div class="reservation">
+          <ul class="time-list">
+            <li class="time">10:00</li>
+            <li class="time">12:00</li>
+            <li class="time">14:00</li>
+            <li class="time">16:00</li>
+            <li class="time">18:00</li>
+            <li class="time">20:00</li>
+            <li class="time">22:00</li>
+          </ul>
+        </div>
       </div>
 
       <div class="info-container">
@@ -835,7 +851,8 @@
                   type="checkbox"
                   name="form-checkbox"
                   value="General settings"
-                /><p>Прочетох и се запознах с общите условия за ползване.</p>
+                />
+                <p>Прочетох и се запознах с общите условия за ползване.</p>
               </label>
             </li>
 
@@ -846,7 +863,10 @@
                   type="checkbox"
                   name="form-checkbox"
                   value="Data"
-                /><p>Съгласен съм данните ми да бъдат използвани за маркетингови цели.</p>
+                />
+                <p>
+                  Съгласен съм данните ми да бъдат използвани за маркетингови цели.
+                </p>
               </label>
             </li>
 
@@ -857,16 +877,18 @@
                   type="checkbox"
                   name="form-checkbox"
                   value="PI security"
-                /><a href="https://www.questhouse.bg/prava-za-zashtita-na-lichnite-danni">Запознат съм с правата за защита на личните данни.</a>
+                /><a
+                  href="https://www.questhouse.bg/prava-za-zashtita-na-lichnite-danni"
+                  >Запознат съм с правата за защита на личните данни.</a
+                >
               </label>
             </li>
           </ul>
         </form>
+        <div class="preFooter-container"><a href="#"><button type="button" class="button footer-btn">Запази своя час</button></a></div>
       </div>
     </section>
-    <footer>
-      <a href="#"><button type="button" class="button">Запази своя час</button></a>
-    </footer>
+    <footer></footer>
 </body>
 </html>
 
