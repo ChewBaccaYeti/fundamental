@@ -13,7 +13,7 @@
     font-family: "Hind";
     src:url('./fonts/Hind-Light.ttf'),
         url('./fonts/Hind-Regular.ttf'),
-        url('./fonts/Hind-Semi-Bold.ttf');
+        url('./fonts/Hind-SemiBold.ttf');
 }
 @font-face {
     font-family: "Poppins";
@@ -112,21 +112,15 @@ box-shadow: var(--box-shadow);
 /* Header section  -------------------------------------------------------------------*/
 
 .header-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-decoration: none solid rgb(68, 68, 68);
+  text-transform: lowercase;
+  font-family: var(--Montserrat);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  font-size: 16px;
 
-    height: 73px;
-    text-decoration: none solid rgb(68, 68, 68);
-    text-transform: lowercase;
-    font-family: var(--Montserrat);
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    font-size: 16px;
-
-    color: var(--accent-color);
-    background-color: #202020;
+  color: var(--accent-color);
 }
 
 .header-container {
@@ -134,39 +128,28 @@ box-shadow: var(--box-shadow);
   padding: 0 20px;
 }
 
-.header-navigation {
-  display:flex;
-  align-items: center;
-}
+.header-navigation {}
 
-.header-list {
-  display: flex;
-  flex-direction: row;
+.header-list {}
 
-  list-style: none;
-    gap: 37px;
-    line-height: 20px;
+.header-list > li:hover {
+  border-bottom: 1px solid #FFCC00;
 }
-.header-list > li:hover {}
 
 .header-list_item {}
 
 .header-button {
-  display: flex;
-  align-items: center;
+  margin-left: 202px;
+  padding: 16px 34px 17px 35px;
 
-    margin-left: 202px;
-    width: 223px;
-    height: 51px;
-    padding: 16px 34px 17px 35px;
-    color: var(--accent-color);
-    border: 1px solid #F5F5F5;
-    border-radius: 23px;
-    background-color: #202020;
+  color: var(--accent-color);
+  border: 1px solid #F5F5F5;
+  border-radius: 23px;
+  background-color: #202020;
 }
 .header-button:hover {
   cursor: pointer;
-  background-color: #404040;
+  background-color: #2e2e2e;
   border-top: 1px solid #4C40F7;
   border-right: 1px solid #4C40F7;
   border-bottom: 1px solid #FFCC00;
@@ -330,22 +313,27 @@ box-shadow: var(--box-shadow);
 
 /* Escape section -------------------------------------------------------------------*/
 
-.escape_section {
+.escape-section {
   position: relative;
 
     height: 1080px;
 }
 
-/* .escape_arrow {
-  position: absolute;
-    left: 2012.65px;
-    top: 2153.67px;
-    opacity: 0.05;
-    border: 15px solid #4C40F7;
-    transform: matrix(-0.88, -0.48, -0.48, 0.88, 0, 0);
-} */
+.escape-arrow_container {}
 
-.escape_container {
+.escape-arrow {
+  position: absolute;
+  width: 2171px;
+  height: 356px;
+  left: 2700px;
+  top: 500px;
+
+  opacity: 1;
+  border: 15px solid #4C40F7;
+  transform: matrix(-0.88, -0.48, -0.48, 0.88, 0, 0);
+}
+
+.escape-container {
   display: flex;
 
     width: 1440px;
@@ -354,19 +342,19 @@ box-shadow: var(--box-shadow);
     margin: 0 auto;
     gap: 139px;
 }
-.escape_img {
+.escape-img {
   width: 668px;
   height: 791px;
   border-radius: 10px;
 }
-.escape_info {
+.escape-info {
   width: 634px;
   height: 666px;
 }
 
-.escape_texts {}
+.escape-texts {}
 
-.escape_article {
+.escape-article {
     margin: 0;
     font-family: var(--Montserrat);
     font-style: normal;
@@ -376,7 +364,7 @@ box-shadow: var(--box-shadow);
 
     color: #261E45;
 }
-.escape_paragraph {
+.escape-paragraph {
     margin: 264px 0 0 0;
     font-family: var(--Hind);
     font-style: normal;
@@ -387,7 +375,7 @@ box-shadow: var(--box-shadow);
     color: #191818;
 }
 
-.escape_list {
+.escape-list {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -397,14 +385,14 @@ box-shadow: var(--box-shadow);
     gap: 50px;
 }
 
-.escape_list_item {}
+.escape-list_item {}
 
-.escape_list_container {
+.escape-list_container {
   width: 129px;
   height: 131px;
 }
 
-.escape_list_container > h2 {
+.escape-list_container > h2 {
   font-family: var(--Montserrat);
   font-style: normal;
   font-weight: 700;
@@ -415,7 +403,7 @@ box-shadow: var(--box-shadow);
   color: #333333;
 }
 
-.escape_list_container > p {
+.escape-list_container > p {
   font-family: var(--Poppins);
     font-style: normal;
     font-weight: 400;
@@ -429,7 +417,7 @@ box-shadow: var(--box-shadow);
 /* Video section -------------------------------------------------------------------*/
 
 .video-section {
-  position: relative;
+  /* position: relative; */
 }
 
 .video-container {
@@ -488,8 +476,16 @@ box-shadow: var(--box-shadow);
   padding: 0 307px 120px 306px;
 }
 
+.rounded-xl {
+  width: 1162px;
+  background-color: black;
+  box-shadow: 0 0 10px -1px rgba(76,64,247,0.75);
+  -webkit-box-shadow: 0 0 10px -1px rgba(76,64,247,0.75);
+  -moz-box-shadow: 0 0 10px -1px rgba(76,64,247,0.75);
+}
+
 .video-puddles_container {
-  position: relative;
+  /* position: relative; */
 }
 
 .ellipse {
@@ -860,7 +856,7 @@ box-shadow: var(--box-shadow);
 .toggle-list {
   display: flex;
   justify-content: center;
-  align-items: space-around;
+  align-items: center;
   flex-direction: column;
   gap: 32px;
 }
@@ -944,14 +940,14 @@ box-shadow: var(--box-shadow);
   position: absolute;
 
     left: -970px;
-    top: 0px;
+    top: 0;
 }
 
 .questions_green {
   position: absolute;
 
     left: 50px;
-    top: 0px;
+    top: 0;
 }
 
 /* Reservation section -------------------------------------------------------------------*/
@@ -1020,7 +1016,7 @@ box-shadow: var(--box-shadow);
   align-items: center;
 
     width: 1646px;
-    margin: 0px auto 121px;
+    margin: 0 auto 121px;
     border-radius: 8px;
     border: 1px solid gainsboro;
 }
@@ -1033,7 +1029,7 @@ box-shadow: var(--box-shadow);
 
     width: 1646px;
     height: 82px;
-    margin: 0px auto;
+    margin: 0 auto;
     border-radius: 8px;
     background-color: var(--accent-color);
 }
@@ -1136,7 +1132,7 @@ box-shadow: var(--box-shadow);
 }
 
 .info-list_paragraph {
-  width: 270.27px;
+  width: 270px;
   font-family: var(--Hind);
   font-style: normal;
   font-weight: 600;
@@ -1183,7 +1179,7 @@ box-shadow: var(--box-shadow);
 
     width: 1441px;
     list-style-type: none;
-    padding: 0px 0px 0px 175px;
+    padding: 0 0 0 175px;
     margin-bottom: 50px;
 }
 
