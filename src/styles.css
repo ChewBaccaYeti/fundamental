@@ -825,18 +825,27 @@ box-shadow: var(--box-shadow);
 }
 
 .questions-photos {
-  display: grid;
-  grid-template-areas: "a a a" "b b b" "c c c";
+  position: relative;
 
-  justify-items: stretch;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 
     width: 1122px;
     height: 980px;
-    margin: 50px 50px;
+    margin: 0px auto;
     gap: 30px;
 }
-.questions-photos > img {
+
+.photos-kids {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.photos-kids > img {
+  padding-bottom: 30px;
   border-radius: 5px;
 }
 
