@@ -1,2 +1,2 @@
-# -fundamental-
+# fundamental
 work-project
