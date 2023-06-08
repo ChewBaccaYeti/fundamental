@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-	var heroSection = `
+	const heroSection = `
       <section class="hero-section">
           <div class="hero-container">
               <div class="hero-images">
@@ -37,6 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
       </section>
   `
 
-	var heroContainer = document.getElementById('hero-container')
+	const heroContainer = document.getElementById('hero-container')
 	heroContainer.innerHTML = heroSection
 })
