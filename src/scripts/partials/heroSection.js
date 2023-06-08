@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
-	var heroSection = `
+	const heroSection = `
       <section class="hero-section">
           <div class="hero-container">
               <div class="hero-images">
                   <svg class="purplePuddle">
-                      <use href="./images/svg/sprite-devs.svg#icon-purplePuddle_svg"></use>
+                      <use href="./src/images/svg/sprite-devs.svg#icon-purplePuddle_svg"></use>
                   </svg>
                   <svg class="yellowPuddle">
-                      <use href="./images/svg/sprite-devs.svg#icon-yellowPuddle_svg"></use>
+                      <use href="./src/images/svg/sprite-devs.svg#icon-yellowPuddle_svg"></use>
                   </svg>
-                  <img class="hero-photo" src="./images/heroes_photo.png" alt="Kids with cake" />
+                  <img class="hero-photo" src="./src/images/heroes_photo.png" alt="Kids with cake" />
                   <svg class="arrow-group">
-                      <use href="./images/svg/sprite-devs.svg#icon-arrowGroup_svg"></use>
+                      <use href="./src/images/svg/sprite-devs.svg#icon-arrowGroup_svg"></use>
                   </svg>
               </div>
               <div class="hero_-nfo">
@@ -37,6 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
       </section>
   `
 
-	var heroContainer = document.getElementById('hero-container')
+	const heroContainer = document.getElementById('hero-container')
 	heroContainer.innerHTML = heroSection
 })
